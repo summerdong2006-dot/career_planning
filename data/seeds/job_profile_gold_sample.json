@@ -1,0 +1,90 @@
+﻿{
+  "items": [
+    {
+      "case_id": "sample-python-1",
+      "job_data": {
+        "position_name": "Python开发工程师",
+        "job_category": "后端开发",
+        "work_city": "上海市",
+        "salary_range": "15K-25K·14薪",
+        "company_full_name": "上海星云数据科技有限公司",
+        "industry": "人工智能/大数据",
+        "job_description": "负责Python服务开发与数据处理，熟悉FastAPI和SQL，本科及以上学历，1-3年开发经验，有云原生经验优先，具备良好的沟通能力和团队协作能力。",
+        "company_intro": "聚焦企业数据智能平台建设。",
+        "job_tags": ["Python", "后端", "SQL"]
+      },
+      "expected": {
+        "job_title": "Python开发工程师",
+        "job_level": "未明确",
+        "education_requirement": "本科",
+        "years_experience_requirement": "1-3年",
+        "must_have_skills": ["Python", "FastAPI", "SQL"],
+        "nice_to_have_skills": ["Docker"],
+        "certificates": [],
+        "soft_skills": ["沟通能力", "团队协作"],
+        "internship_requirement": "未明确",
+        "industry_tags": ["人工智能", "大数据", "后端开发"],
+        "promotion_path": ["Python开发工程师", "高级Python开发工程师", "技术负责人"],
+        "summary": "Python开发工程师，岗位级别未明确，学历要求本科，经验要求1-3年，核心技能包括Python、FastAPI、SQL。",
+        "extracted_evidence": {
+          "job_title": ["Python开发工程师"],
+          "job_level": [],
+          "education_requirement": ["本科及以上学历"],
+          "years_experience_requirement": ["1-3年开发经验"],
+          "must_have_skills": ["负责Python服务开发与数据处理，熟悉FastAPI和SQL，本科及以上学历，1-3年开发经验，有云原生经验优先，具备良好的沟通能力和团队协作能力"],
+          "nice_to_have_skills": ["负责Python服务开发与数据处理，熟悉FastAPI和SQL，本科及以上学历，1-3年开发经验，有云原生经验优先，具备良好的沟通能力和团队协作能力"],
+          "certificates": [],
+          "soft_skills": ["负责Python服务开发与数据处理，熟悉FastAPI和SQL，本科及以上学历，1-3年开发经验，有云原生经验优先，具备良好的沟通能力和团队协作能力"],
+          "internship_requirement": [],
+          "industry_tags": ["人工智能/大数据"],
+          "promotion_path": [],
+          "summary": ["Python开发工程师，岗位级别未明确，学历要求本科，经验要求1-3年，核心技能包括Python、FastAPI、SQL。"]
+        },
+        "confidence_score": 0.8
+      }
+    },
+    {
+      "case_id": "sample-frontend-1",
+      "job_data": {
+        "position_name": "前端开发工程师",
+        "job_category": "前端开发",
+        "work_city": "北京市",
+        "salary_range": "18K-30K",
+        "company_full_name": "北京智联云科有限公司",
+        "industry": "互联网",
+        "job_description": "负责React前端开发与页面性能优化，本科及以上，熟悉JavaScript、TypeScript，有数据可视化经验优先。",
+        "company_intro": "提供行业信息化解决方案。",
+        "job_tags": ["前端"]
+      },
+      "expected": {
+        "job_title": "前端开发工程师",
+        "job_level": "未明确",
+        "education_requirement": "本科",
+        "years_experience_requirement": "未明确",
+        "must_have_skills": ["React", "JavaScript", "TypeScript"],
+        "nice_to_have_skills": [],
+        "certificates": [],
+        "soft_skills": [],
+        "internship_requirement": "未明确",
+        "industry_tags": ["互联网", "前端开发"],
+        "promotion_path": ["前端开发工程师", "高级前端开发工程师", "技术负责人"],
+        "summary": "前端开发工程师，岗位级别未明确，学历要求本科，经验要求未明确，核心技能包括React、JavaScript、TypeScript。",
+        "extracted_evidence": {
+          "job_title": ["前端开发工程师"],
+          "job_level": [],
+          "education_requirement": ["本科及以上"],
+          "years_experience_requirement": [],
+          "must_have_skills": ["负责React前端开发与页面性能优化，本科及以上，熟悉JavaScript、TypeScript，有数据可视化经验优先"],
+          "nice_to_have_skills": [],
+          "certificates": [],
+          "soft_skills": [],
+          "internship_requirement": [],
+          "industry_tags": ["互联网"],
+          "promotion_path": [],
+          "summary": ["前端开发工程师，岗位级别未明确，学历要求本科，经验要求未明确，核心技能包括React、JavaScript、TypeScript。"]
+        },
+        "confidence_score": 0.72
+      }
+    }
+  ]
+}

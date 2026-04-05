@@ -1,0 +1,7 @@
+{
+  "source": {
+    "student_id": "test_001",
+    "resume_text": "计算机科学本科，熟悉 Python、React，做过 Web 项目，使用 React + FastAPI 开发系统"
+  },
+  "persist": true
+}

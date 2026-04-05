@@ -1,0 +1,5809 @@
+{
+  "batch_id": 2,
+  "batch_name": "official-jobs",
+  "summary": {
+    "total_records": 9958,
+    "unique_records": 9431,
+    "duplicate_records": 527,
+    "invalid_records": 0
+  },
+  "logs": [
+    {
+      "raw_id": 36,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 11,
+        "canonical_key": "419353a3407e0df690bc43c1a8308028d981b33f"
+      }
+    },
+    {
+      "raw_id": 394,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 94,
+        "canonical_key": "62113ce311d1d8f850734a767dc459f19cb4f5b4"
+      }
+    },
+    {
+      "raw_id": 403,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 399,
+        "canonical_key": "70085c25ed0d9b7f035f7398488c20a164af0524"
+      }
+    },
+    {
+      "raw_id": 405,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 201,
+        "canonical_key": "c8e33c6ce2c2a36463e4677850ea03c1364c4779"
+      }
+    },
+    {
+      "raw_id": 425,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 89,
+        "canonical_key": "92319ca49386a7d96c0ad97c53fe00a80981d4bc"
+      }
+    },
+    {
+      "raw_id": 487,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 108,
+        "canonical_key": "cf69c0018253ef55c7bfeac39b431debc558884a"
+      }
+    },
+    {
+      "raw_id": 577,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 400,
+        "canonical_key": "48171534aed4d6373a012697f9a23d9c9b506686"
+      }
+    },
+    {
+      "raw_id": 681,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 512,
+        "canonical_key": "1e670fd3793348772bbc6cf24050765418a4e1a4"
+      }
+    },
+    {
+      "raw_id": 758,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 246,
+        "canonical_key": "b1918103bed5bd8cb310f2c7b9f4714ab64e24e4"
+      }
+    },
+    {
+      "raw_id": 794,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 652,
+        "canonical_key": "79b0ebfff80030c583dbb0e20259dd2a62f5e358"
+      }
+    },
+    {
+      "raw_id": 796,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 778,
+        "canonical_key": "76a23bf4a9cd8601b7c25151de665e80e6aa8d52"
+      }
+    },
+    {
+      "raw_id": 808,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 207,
+        "canonical_key": "c792a05f0b93ba17bb8a9ccc5a1e156b5e1a8bd8"
+      }
+    },
+    {
+      "raw_id": 814,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 695,
+        "canonical_key": "9216c4709509e200a83b4433a728025053eb1809"
+      }
+    },
+    {
+      "raw_id": 835,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 474,
+        "canonical_key": "e981eb7d372e3e15c3401d757f56c82b1c000921"
+      }
+    },
+    {
+      "raw_id": 876,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 18,
+        "canonical_key": "ab3ec29ef702467f793456ea217deb357e22e8c9"
+      }
+    },
+    {
+      "raw_id": 899,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 407,
+        "canonical_key": "cd5ab5e8851d3bc17e0697188506f3b6237a10d5"
+      }
+    },
+    {
+      "raw_id": 955,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 131,
+        "canonical_key": "a1b0e001f8a5a5f8c4f62cee01d2fe3951080932"
+      }
+    },
+    {
+      "raw_id": 957,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 707,
+        "canonical_key": "da883342f61b134671b9e3bf0aa459b9bbcf3dbf"
+      }
+    },
+    {
+      "raw_id": 969,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 466,
+        "canonical_key": "53b8f1c7bd7b2053739e2c227eb1591854852e08"
+      }
+    },
+    {
+      "raw_id": 984,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 338,
+        "canonical_key": "9092787d12f770c489fd38d3e9e59be4962e87f5"
+      }
+    },
+    {
+      "raw_id": 985,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 285,
+        "canonical_key": "c0b851aa9b9a671d449341cf177b5f9c0c5eac04"
+      }
+    },
+    {
+      "raw_id": 991,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 88,
+        "canonical_key": "7880270bb6f413d92fc8fda5df5db99748786a64"
+      }
+    },
+    {
+      "raw_id": 999,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 862,
+        "canonical_key": "0413fad882efc3b19d63485a896a862ba7c6b1fe"
+      }
+    },
+    {
+      "raw_id": 1086,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 997,
+        "canonical_key": "426149a62c597d289cc74f83de5fb9483cd0b8cc"
+      }
+    },
+    {
+      "raw_id": 1087,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 216,
+        "canonical_key": "ac412d089a352a339a6787e8be32f5ab877118e7"
+      }
+    },
+    {
+      "raw_id": 1143,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 819,
+        "canonical_key": "fad25ed7198b5db1ab1d6ced16e6b44f07844212"
+      }
+    },
+    {
+      "raw_id": 1163,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 32,
+        "canonical_key": "cc0fa770edb12e7301552a8b6696e762a192acd8"
+      }
+    },
+    {
+      "raw_id": 1189,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 351,
+        "canonical_key": "90744d8050dc0c9a8ba1c41db050414e4be3c07b"
+      }
+    },
+    {
+      "raw_id": 1195,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 557,
+        "canonical_key": "792c00a6dbf5b7add6ed2460920699ab67fc09e1"
+      }
+    },
+    {
+      "raw_id": 1218,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 625,
+        "canonical_key": "ced182fb870c1e1967f2a0535fab5478d3c25ccc"
+      }
+    },
+    {
+      "raw_id": 1236,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 788,
+        "canonical_key": "20aa0c29973daecb20c72dda49cd3c69b1e1d523"
+      }
+    },
+    {
+      "raw_id": 1250,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1006,
+        "canonical_key": "1ea20ec2223fe0d1167264bcbc80357944e175b5"
+      }
+    },
+    {
+      "raw_id": 1271,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 66,
+        "canonical_key": "106ac43035aedd38225a2ecd0798e9aa4e5764d5"
+      }
+    },
+    {
+      "raw_id": 1276,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 662,
+        "canonical_key": "491d2d14a6c083b444f67cf2dea5fb1be3c2c2b4"
+      }
+    },
+    {
+      "raw_id": 1280,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 250,
+        "canonical_key": "2f2bb02be1ef8c5f071fe169f9f047e4c65ed757"
+      }
+    },
+    {
+      "raw_id": 1399,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1229,
+        "canonical_key": "fa5684449db944e7f76d5d138e879959500f1eb5"
+      }
+    },
+    {
+      "raw_id": 1417,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1352,
+        "canonical_key": "089c47bff69e6c9ab5cf763a8fe1df052a8ce9e5"
+      }
+    },
+    {
+      "raw_id": 1429,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 239,
+        "canonical_key": "3319d16a2a90be346048f52fc2f36e2f051b73db"
+      }
+    },
+    {
+      "raw_id": 1434,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 296,
+        "canonical_key": "5668b2a4c7da99fee6cd6bf84db41fb778e66cef"
+      }
+    },
+    {
+      "raw_id": 1442,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 706,
+        "canonical_key": "7ada7ab99c19137c5b4cb9b241e2d9929a3d0e47"
+      }
+    },
+    {
+      "raw_id": 1470,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1424,
+        "canonical_key": "ea181f71dc05e22ead75c742f8bef95fc91b3f48"
+      }
+    },
+    {
+      "raw_id": 1489,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 69,
+        "canonical_key": "9340bb3efd6b2b362d4ba22ea1dbb81f2293d01e"
+      }
+    },
+    {
+      "raw_id": 1497,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 404,
+        "canonical_key": "e43ac700b8737cf5c851770d84999b513b3c1ec7"
+      }
+    },
+    {
+      "raw_id": 1519,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1445,
+        "canonical_key": "972088b6db4b8bb3dd1c5423ffac5d78c85b8a89"
+      }
+    },
+    {
+      "raw_id": 1529,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 74,
+        "canonical_key": "1d7f8f855010a42fd70aafe659626d89227b286a"
+      }
+    },
+    {
+      "raw_id": 1545,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1329,
+        "canonical_key": "00a49cc1ea10d7081e7806e1c39fb9291c5a5de8"
+      }
+    },
+    {
+      "raw_id": 1547,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1033,
+        "canonical_key": "8168f1b64686fd524a76057fc1bd5ee4f2e7de13"
+      }
+    },
+    {
+      "raw_id": 1556,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1406,
+        "canonical_key": "df23b53ab16cdf94492e1c9efaa81e207bf6bfe9"
+      }
+    },
+    {
+      "raw_id": 1562,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 558,
+        "canonical_key": "a6b3f45ce0ee6f4697acea09d872714598e801d3"
+      }
+    },
+    {
+      "raw_id": 1569,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 344,
+        "canonical_key": "2b05eac1fc10b79f6c46cb446a75dd0e0c130606"
+      }
+    },
+    {
+      "raw_id": 1594,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1105,
+        "canonical_key": "e4753ad64861da4cd2971cf71fb13a60efdb51d4"
+      }
+    },
+    {
+      "raw_id": 1606,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1277,
+        "canonical_key": "86e1cf51b9b26803ba165cd1d18a4f8bf298f4de"
+      }
+    },
+    {
+      "raw_id": 1607,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1313,
+        "canonical_key": "0d9826b5d673f73a24239fa0943fce4cbb8a2ef2"
+      }
+    },
+    {
+      "raw_id": 1659,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1480,
+        "canonical_key": "b5ed80f0a0ef20a4705ce46105bedc0143cefa53"
+      }
+    },
+    {
+      "raw_id": 1674,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1289,
+        "canonical_key": "cfbce51ae34eaee61267ad4023406a28ce8b3da6"
+      }
+    },
+    {
+      "raw_id": 1691,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1264,
+        "canonical_key": "d836607d856cc0a0446c70820f393e76a16d19cb"
+      }
+    },
+    {
+      "raw_id": 1697,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 435,
+        "canonical_key": "70130a9ea905f4b27a8b775e00a950f36d98511b"
+      }
+    },
+    {
+      "raw_id": 1708,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 757,
+        "canonical_key": "c66cfd680d65ba5a6b4a8b6e393bdf7a1620a9bf"
+      }
+    },
+    {
+      "raw_id": 1711,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 72,
+        "canonical_key": "f816b4d002c2047924235a90be818a04c36c9ad3"
+      }
+    },
+    {
+      "raw_id": 1748,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 752,
+        "canonical_key": "ed84319b5d98172ad511475b737a1e903b5f7103"
+      }
+    },
+    {
+      "raw_id": 1766,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 712,
+        "canonical_key": "9ea8ca655dfa38a341227b0c7f46098f6a0c34a4"
+      }
+    },
+    {
+      "raw_id": 1770,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 861,
+        "canonical_key": "d8b002c5d0e35303123f41f98bca797a480aca01"
+      }
+    },
+    {
+      "raw_id": 1786,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1326,
+        "canonical_key": "a92007c1c991ecfb895c8e21637bb9b0cfc40e2d"
+      }
+    },
+    {
+      "raw_id": 1789,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1667,
+        "canonical_key": "59d7fa2caf21e0c5e0c1129caba5224da901c269"
+      }
+    },
+    {
+      "raw_id": 1799,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1498,
+        "canonical_key": "fe704a8dde5df07fa11d28cc3c769b4da8a12f68"
+      }
+    },
+    {
+      "raw_id": 1804,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1278,
+        "canonical_key": "414e526855b05152e53168284d092f3c0414aa58"
+      }
+    },
+    {
+      "raw_id": 1823,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 838,
+        "canonical_key": "e667c40b8398acb67287d0cef429b4a0729e4a76"
+      }
+    },
+    {
+      "raw_id": 1840,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 714,
+        "canonical_key": "3e26b26e9fdca8535d35f14f94c19987c29e41b8"
+      }
+    },
+    {
+      "raw_id": 1852,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1710,
+        "canonical_key": "641c6166060e9e963f524b05a0120a04c102ee29"
+      }
+    },
+    {
+      "raw_id": 1869,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 199,
+        "canonical_key": "a12258276f0389348a459fcac7999c2a1810c63e"
+      }
+    },
+    {
+      "raw_id": 1906,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 498,
+        "canonical_key": "d1693de1ec5c279adc7395ae0f170e21f7570653"
+      }
+    },
+    {
+      "raw_id": 1907,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 342,
+        "canonical_key": "eee421281c5bb929dbcd704d7c7b998250c2987b"
+      }
+    },
+    {
+      "raw_id": 1915,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 952,
+        "canonical_key": "d3ce8de1680e91ec4040589f0542bad85f2f9e33"
+      }
+    },
+    {
+      "raw_id": 1924,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1848,
+        "canonical_key": "3f73129572cb386823e0cb8d41d514f3d63bcf63"
+      }
+    },
+    {
+      "raw_id": 1941,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1185,
+        "canonical_key": "9e1ee446e994feb89d3c88056132d0c77d0c90b7"
+      }
+    },
+    {
+      "raw_id": 1946,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 168,
+        "canonical_key": "068f9fec206b095310d88782d323babee09598e0"
+      }
+    },
+    {
+      "raw_id": 1959,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1688,
+        "canonical_key": "fc65a0bac6e03fd5fbf77fe7a87fd9e0d535bd33"
+      }
+    },
+    {
+      "raw_id": 1968,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 593,
+        "canonical_key": "bcfc849a466f16182a632fd7339378ccaeebadc3"
+      }
+    },
+    {
+      "raw_id": 1983,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 135,
+        "canonical_key": "6663beab2d4940faf261889b34d9e8a44ba38034"
+      }
+    },
+    {
+      "raw_id": 1984,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 932,
+        "canonical_key": "1ab92df58b8f13390b2ef2e42984c3c378b0c561"
+      }
+    },
+    {
+      "raw_id": 1993,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 710,
+        "canonical_key": "7d334d243a9f86dc47837f959f0224900746f930"
+      }
+    },
+    {
+      "raw_id": 1995,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1641,
+        "canonical_key": "73d99aa304beb1071e789049da59b319def6519a"
+      }
+    },
+    {
+      "raw_id": 1996,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1133,
+        "canonical_key": "52eaba61f3cd6ebde3b970791076d8528cd2d29c"
+      }
+    },
+    {
+      "raw_id": 2016,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1855,
+        "canonical_key": "5c642a551671221b9c355446e90574ec18e62471"
+      }
+    },
+    {
+      "raw_id": 2029,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1580,
+        "canonical_key": "4aba56f112d5d4c15a35425e388556e67a515f02"
+      }
+    },
+    {
+      "raw_id": 2046,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 202,
+        "canonical_key": "b5be87e5073ef4afabc94c1255f9d5c8f46a8936"
+      }
+    },
+    {
+      "raw_id": 2048,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1727,
+        "canonical_key": "468019e83cc66ceeba38f73bcd683e769dc00b68"
+      }
+    },
+    {
+      "raw_id": 2060,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 515,
+        "canonical_key": "7048f3f5bbff2f4e2b85b6f6a1091a9b44e20b0c"
+      }
+    },
+    {
+      "raw_id": 2082,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 904,
+        "canonical_key": "f2e0aacaf28c5333d5c7f3f4205a4399e5022d15"
+      }
+    },
+    {
+      "raw_id": 2107,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1908,
+        "canonical_key": "0ab82a6729d0ea3850b63a55cdbcc07c8f2f5a54"
+      }
+    },
+    {
+      "raw_id": 2113,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1966,
+        "canonical_key": "edfd4b945d390b55380517bd612b8dde9d435f51"
+      }
+    },
+    {
+      "raw_id": 2137,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 144,
+        "canonical_key": "416f668713f199cccfa1e1adf3262814e0b9f45f"
+      }
+    },
+    {
+      "raw_id": 2139,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 486,
+        "canonical_key": "e4aff310933b8c3a26d036afab6ca8de6142bc7d"
+      }
+    },
+    {
+      "raw_id": 2140,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 276,
+        "canonical_key": "03d978f070ebc53ac7a0e6055da73cba2a805b79"
+      }
+    },
+    {
+      "raw_id": 2150,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 230,
+        "canonical_key": "31e34e06ee444cb9fd3dedba17541e2f804efa6b"
+      }
+    },
+    {
+      "raw_id": 2153,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 280,
+        "canonical_key": "974cb2882dd2811d072ca17b9f4dcd056d9b3fa3"
+      }
+    },
+    {
+      "raw_id": 2156,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1258,
+        "canonical_key": "55b0e5e8cdf0630d51ddb76902b4a68858824709"
+      }
+    },
+    {
+      "raw_id": 2158,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1302,
+        "canonical_key": "fad2d2a0a3fa46b43a5925d49e5ff002cda7653c"
+      }
+    },
+    {
+      "raw_id": 2171,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1627,
+        "canonical_key": "711e2287d3788c66f96ab5a84fb3422649ff523c"
+      }
+    },
+    {
+      "raw_id": 2186,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 881,
+        "canonical_key": "559bb48167615de3a7966870c3a0edd917c165ff"
+      }
+    },
+    {
+      "raw_id": 2187,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 121,
+        "canonical_key": "991c76635e3f15b61467d77deb1aacb928d97e61"
+      }
+    },
+    {
+      "raw_id": 2192,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 633,
+        "canonical_key": "3578512daa484641798efb02bf579e7d077d100c"
+      }
+    },
+    {
+      "raw_id": 2197,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1942,
+        "canonical_key": "478f25170a5742d0d9d2768d3e70db77c80a63c3"
+      }
+    },
+    {
+      "raw_id": 2200,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1464,
+        "canonical_key": "21ff733821c9251b6ce2a02af58a6143d9284bc5"
+      }
+    },
+    {
+      "raw_id": 2231,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1992,
+        "canonical_key": "5e75d8541a62f13f2a807bd3e62b8c281da50e3f"
+      }
+    },
+    {
+      "raw_id": 2296,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 574,
+        "canonical_key": "81f86ba22e67fc0a1699bd90a1abc8c545579940"
+      }
+    },
+    {
+      "raw_id": 2299,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1615,
+        "canonical_key": "21cc6c0bc95f9eab99e5f04320c987b3ba07e040"
+      }
+    },
+    {
+      "raw_id": 2303,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1949,
+        "canonical_key": "53c78f1e962bef0d2274afd37e99e75260935d7e"
+      }
+    },
+    {
+      "raw_id": 2305,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1698,
+        "canonical_key": "21d62fbdc565c765ee01311d9a18e1a8cdd78180"
+      }
+    },
+    {
+      "raw_id": 2308,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1068,
+        "canonical_key": "d8cc9ff4d6f109a51acfb50e81c7d5b6555fd341"
+      }
+    },
+    {
+      "raw_id": 2321,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 915,
+        "canonical_key": "8f4d45dc9ee4ad30d836683026b383ad7b1b3012"
+      }
+    },
+    {
+      "raw_id": 2323,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 383,
+        "canonical_key": "8e5d76241f108f2ebfd014cc37ef6794bb21ff95"
+      }
+    },
+    {
+      "raw_id": 2348,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 289,
+        "canonical_key": "95a1117f59e9f7eeef837473f4fd9b06494ef319"
+      }
+    },
+    {
+      "raw_id": 2374,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2310,
+        "canonical_key": "7972894f03cb3f50b2270c2ba3550892563bbd24"
+      }
+    },
+    {
+      "raw_id": 2380,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2134,
+        "canonical_key": "af84ecf22ca2bfecd710b7a530569ed0d2593812"
+      }
+    },
+    {
+      "raw_id": 2382,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 962,
+        "canonical_key": "ec6f0b2d71ec09036023d2d3f7933d76816534b6"
+      }
+    },
+    {
+      "raw_id": 2390,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 889,
+        "canonical_key": "d394b79a8bdaa5e7634222adb6ad4956f6841342"
+      }
+    },
+    {
+      "raw_id": 2393,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 218,
+        "canonical_key": "ad6244c283ca68458b66b3140607b490a636576f"
+      }
+    },
+    {
+      "raw_id": 2396,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2167,
+        "canonical_key": "efc07f55bf9b10170b044e346fe3381adf798f24"
+      }
+    },
+    {
+      "raw_id": 2398,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 494,
+        "canonical_key": "a2242a2d64780b9c02624064e7e737fa0da98bdd"
+      }
+    },
+    {
+      "raw_id": 2402,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 987,
+        "canonical_key": "8cbf67d4de54e6142ac45c7253be434a1ac7fa63"
+      }
+    },
+    {
+      "raw_id": 2407,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 362,
+        "canonical_key": "cb879f8060f438a6834c178b9edc569e7430b487"
+      }
+    },
+    {
+      "raw_id": 2414,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1990,
+        "canonical_key": "802666f0fd63a42df059bb79626f482bff422836"
+      }
+    },
+    {
+      "raw_id": 2417,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 519,
+        "canonical_key": "5cbb1b102893ff465a282af8320262e230cb826b"
+      }
+    },
+    {
+      "raw_id": 2434,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1593,
+        "canonical_key": "2a8c2600c317854a65792a941418a09010b80bcc"
+      }
+    },
+    {
+      "raw_id": 2455,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 643,
+        "canonical_key": "50631ebc8cf7ac6f86d4e6ad03e52e42aa32bd31"
+      }
+    },
+    {
+      "raw_id": 2470,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 433,
+        "canonical_key": "948d0c0d9e8649da3acc86948a5759b4a984e3bd"
+      }
+    },
+    {
+      "raw_id": 2472,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 464,
+        "canonical_key": "9d9a868da50f7ef6d06631f2501a656e8e85077d"
+      }
+    },
+    {
+      "raw_id": 2490,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1601,
+        "canonical_key": "261d564371681b6df4891b44364915e75e8459bf"
+      }
+    },
+    {
+      "raw_id": 2508,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 839,
+        "canonical_key": "a134d076948320ab2caf527654f40c62e5528ee4"
+      }
+    },
+    {
+      "raw_id": 2513,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1914,
+        "canonical_key": "07570eae39d720e98da550ad4bec190831d3f352"
+      }
+    },
+    {
+      "raw_id": 2516,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2178,
+        "canonical_key": "3bb1cfa45415c059061c153ec6b4ff6de4246a87"
+      }
+    },
+    {
+      "raw_id": 2532,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1274,
+        "canonical_key": "cf352cdd659da49a399c836d8c242420eef7d0b2"
+      }
+    },
+    {
+      "raw_id": 2535,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2206,
+        "canonical_key": "f1d175d9d6ec5e15c9a2ab39d395a63e2858241b"
+      }
+    },
+    {
+      "raw_id": 2543,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 52,
+        "canonical_key": "bfc0834ff21c77e0f2ead4dd37b41856203cc6e7"
+      }
+    },
+    {
+      "raw_id": 2544,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2276,
+        "canonical_key": "94b0d27ca43d92986a82af8014bb7f9779ec8b97"
+      }
+    },
+    {
+      "raw_id": 2547,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1240,
+        "canonical_key": "377a3219fa00a05a84c852fedab049c4f2fdd89e"
+      }
+    },
+    {
+      "raw_id": 2564,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 492,
+        "canonical_key": "ae11017e30bb0cecc9daea5854f886824e4c0ee6"
+      }
+    },
+    {
+      "raw_id": 2582,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 25,
+        "canonical_key": "75e3aba6a9a1f0723d664c4d0cc46eb7f3394c70"
+      }
+    },
+    {
+      "raw_id": 2584,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2333,
+        "canonical_key": "60a5636885327567a321245b4d12323549c2284b"
+      }
+    },
+    {
+      "raw_id": 2596,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 821,
+        "canonical_key": "8ef5bdbebd669abef06e23b3120ed15e815bc8d4"
+      }
+    },
+    {
+      "raw_id": 2607,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 550,
+        "canonical_key": "5755d0f3832803855bbee0a8b3d3fdcf7589cdaf"
+      }
+    },
+    {
+      "raw_id": 2627,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1796,
+        "canonical_key": "23e36271476a86394afc2398aaef440757f1a7a8"
+      }
+    },
+    {
+      "raw_id": 2637,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 848,
+        "canonical_key": "ce9a16bf2587e5ea879f7b5e60804ca2c50598ff"
+      }
+    },
+    {
+      "raw_id": 2639,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1548,
+        "canonical_key": "144b4cf692f02d13efec275ca3a0e7510022780b"
+      }
+    },
+    {
+      "raw_id": 2649,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 386,
+        "canonical_key": "9c6452b3589c341d2636f99b5801cca831677d6d"
+      }
+    },
+    {
+      "raw_id": 2689,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1807,
+        "canonical_key": "1c957da45ac73f8b75fb9c4ac38d7bd1f7b4bc9b"
+      }
+    },
+    {
+      "raw_id": 2694,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 672,
+        "canonical_key": "7fa83539b4d639858ab78617ad812f0ecc591547"
+      }
+    },
+    {
+      "raw_id": 2704,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1287,
+        "canonical_key": "4aa461e477ad2451e622d717769de82e3f045911"
+      }
+    },
+    {
+      "raw_id": 2727,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1366,
+        "canonical_key": "bd6235d7713da86a32703f5d3f607ebcee3da560"
+      }
+    },
+    {
+      "raw_id": 2734,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2194,
+        "canonical_key": "5a0dca1fbee7b29c3b1506e9ef88ce3a1d88b111"
+      }
+    },
+    {
+      "raw_id": 2737,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 12,
+        "canonical_key": "b91654355d6771854c5ebe445a840e35f4e0af49"
+      }
+    },
+    {
+      "raw_id": 2741,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 616,
+        "canonical_key": "4346671b79c3f76e57a4db3988271989061e2bad"
+      }
+    },
+    {
+      "raw_id": 2745,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2251,
+        "canonical_key": "61a6ae3899f48301754d0de6bce152553f174cfd"
+      }
+    },
+    {
+      "raw_id": 2766,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2264,
+        "canonical_key": "83ebb9d98795d1917646a90d3ca4392392d6d60a"
+      }
+    },
+    {
+      "raw_id": 2767,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2376,
+        "canonical_key": "9bb699668394a9ff0299d8f6f22949959291280a"
+      }
+    },
+    {
+      "raw_id": 2781,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2306,
+        "canonical_key": "94256106831c75e3cf62b75e07f3287497242d2c"
+      }
+    },
+    {
+      "raw_id": 2810,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2388,
+        "canonical_key": "5479d4ad30a59592611127bee63815a0ab892245"
+      }
+    },
+    {
+      "raw_id": 2813,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 391,
+        "canonical_key": "81f545e9670e2a7363a5ffdcf48543e713ba3d89"
+      }
+    },
+    {
+      "raw_id": 2837,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2225,
+        "canonical_key": "7a88b54c94168a116f0fcd37434bd07f31cdd235"
+      }
+    },
+    {
+      "raw_id": 2853,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2797,
+        "canonical_key": "7e39e0b26a15b57675b7491a056be82ed08bac7b"
+      }
+    },
+    {
+      "raw_id": 2860,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 644,
+        "canonical_key": "1d9664e0e3f305c30ad0d675adadec1be91eaf69"
+      }
+    },
+    {
+      "raw_id": 2865,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2492,
+        "canonical_key": "27a391a45621698fdf141cd3beb23d006eb08c5f"
+      }
+    },
+    {
+      "raw_id": 2866,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1549,
+        "canonical_key": "2311ee5b6921c2de8f389134f36c86dd7ed0a8e5"
+      }
+    },
+    {
+      "raw_id": 2868,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 44,
+        "canonical_key": "66a0e3088b9e30888dde766369672cda75c0f8bf"
+      }
+    },
+    {
+      "raw_id": 2876,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2253,
+        "canonical_key": "89686d9dc6596728952fe54fbeeffc4ad73b293a"
+      }
+    },
+    {
+      "raw_id": 2880,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 599,
+        "canonical_key": "e620541c7715da84f28221f7d657e9fba1967856"
+      }
+    },
+    {
+      "raw_id": 2883,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2265,
+        "canonical_key": "2ddc70c76d80e0a5373b84c460a99b27748b7437"
+      }
+    },
+    {
+      "raw_id": 2886,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2094,
+        "canonical_key": "20ee36b5deb8940fdfc10e7ad5a3def9c644efb7"
+      }
+    },
+    {
+      "raw_id": 2887,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1209,
+        "canonical_key": "ee519b29df6fc848ae5a908e727172ac2f07b039"
+      }
+    },
+    {
+      "raw_id": 2893,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1398,
+        "canonical_key": "b6e831efec2156d8868b854aa2c3084482ab46ba"
+      }
+    },
+    {
+      "raw_id": 2897,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 420,
+        "canonical_key": "409137fe787bf05f96e478cf0ecc20a039e61929"
+      }
+    },
+    {
+      "raw_id": 2898,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1207,
+        "canonical_key": "642bf5ced135ebc0f86a09e4dd7121893e22bf60"
+      }
+    },
+    {
+      "raw_id": 2904,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 553,
+        "canonical_key": "6609edc546df5c56492c8aa51d34f138463fc502"
+      }
+    },
+    {
+      "raw_id": 2912,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2838,
+        "canonical_key": "3276d526deee98798bf062639466cd6fdb2e02b9"
+      }
+    },
+    {
+      "raw_id": 2930,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2703,
+        "canonical_key": "db78af32a690172c8a6c7996e50bfa1e685fd604"
+      }
+    },
+    {
+      "raw_id": 2953,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 547,
+        "canonical_key": "0e34ca04ea270cd96836b8549de576d6ec846db3"
+      }
+    },
+    {
+      "raw_id": 2959,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2484,
+        "canonical_key": "1c9cd3b2febf833f31e4cd119551b74c423aa155"
+      }
+    },
+    {
+      "raw_id": 2966,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 770,
+        "canonical_key": "634326f5f2774e7f88fefcf410e14c1901fdf782"
+      }
+    },
+    {
+      "raw_id": 3002,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1336,
+        "canonical_key": "35b2e8ad7cc6fd22a3bce9c26e1c1276fc925600"
+      }
+    },
+    {
+      "raw_id": 3006,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 783,
+        "canonical_key": "a245eb3d1487e59282425b0f9f877787c3dfd297"
+      }
+    },
+    {
+      "raw_id": 3011,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2764,
+        "canonical_key": "704d82da1043097ff14de6ab3c05b5c03c26d3c5"
+      }
+    },
+    {
+      "raw_id": 3016,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2514,
+        "canonical_key": "ef2060c84b767f7fd30cdc1a94e611151767a33e"
+      }
+    },
+    {
+      "raw_id": 3017,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1211,
+        "canonical_key": "2f1967f723f6a4fdff308c93feb7bffa266348a4"
+      }
+    },
+    {
+      "raw_id": 3021,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 739,
+        "canonical_key": "200f15bb4779b6f84f25cb518512b27bb3d14fda"
+      }
+    },
+    {
+      "raw_id": 3025,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 23,
+        "canonical_key": "a98d2416d88d4dbf89134dadf094a191c8ae4655"
+      }
+    },
+    {
+      "raw_id": 3030,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2664,
+        "canonical_key": "0d1efcc80840ea61ae31ae611932af048db6f32e"
+      }
+    },
+    {
+      "raw_id": 3037,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 523,
+        "canonical_key": "a0fff22d27e6ed70d862cb289b80d5a1260591f5"
+      }
+    },
+    {
+      "raw_id": 3038,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1821,
+        "canonical_key": "98335247e56797dbfe2ff4c4b817f620105a6000"
+      }
+    },
+    {
+      "raw_id": 3039,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2444,
+        "canonical_key": "340e05c202e3d4fec00cd36b56087af3b7980e28"
+      }
+    },
+    {
+      "raw_id": 3041,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 154,
+        "canonical_key": "f22c8d3f3e5774a59ff503ffff356819352cf1c8"
+      }
+    },
+    {
+      "raw_id": 3051,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1165,
+        "canonical_key": "9a77bb5368948c69a4f87a041d0cfc608acf1fcc"
+      }
+    },
+    {
+      "raw_id": 3055,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 364,
+        "canonical_key": "28949585642347851ffec6ef49f37fc4607f691d"
+      }
+    },
+    {
+      "raw_id": 3063,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2553,
+        "canonical_key": "881c3b78fb4318fe84df8b9306169031f7540d21"
+      }
+    },
+    {
+      "raw_id": 3066,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1871,
+        "canonical_key": "ba066c46bb1d14723191fbed5e943a1164288dca"
+      }
+    },
+    {
+      "raw_id": 3072,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2438,
+        "canonical_key": "fa04018313a7fbabe2916685d3dec1adf776355b"
+      }
+    },
+    {
+      "raw_id": 3075,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 880,
+        "canonical_key": "730cefa551e4af4a379a72051b47e359475c1f8e"
+      }
+    },
+    {
+      "raw_id": 3078,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2466,
+        "canonical_key": "d70a0705a4494690ecbb03e7340cc3bfe6907eed"
+      }
+    },
+    {
+      "raw_id": 3079,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 608,
+        "canonical_key": "8fdd63ae4bbc82b5247cc9ab51bedd418152a941"
+      }
+    },
+    {
+      "raw_id": 3082,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2193,
+        "canonical_key": "0b646590a39ee0aa4c18c3ab4cc75a2d607d0496"
+      }
+    },
+    {
+      "raw_id": 3095,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 729,
+        "canonical_key": "b6c43e8b0f6a62622f4bae5fbf308435436389c4"
+      }
+    },
+    {
+      "raw_id": 3105,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1525,
+        "canonical_key": "a94d81a08ec794673e83be5877f7cd6bae3fd5b6"
+      }
+    },
+    {
+      "raw_id": 3123,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1079,
+        "canonical_key": "23571ecfa58285c1d54820ff600416caa84dd9d9"
+      }
+    },
+    {
+      "raw_id": 3140,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 149,
+        "canonical_key": "142b0482df183763e1bb26c1308c42a75962faaa"
+      }
+    },
+    {
+      "raw_id": 3143,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 366,
+        "canonical_key": "963a6b42e2dc98db2593f2dd16aa8d5357dc15f8"
+      }
+    },
+    {
+      "raw_id": 3148,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2409,
+        "canonical_key": "6bd7348cc16c41b64fdceeaaa70581e947286e4b"
+      }
+    },
+    {
+      "raw_id": 3153,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2482,
+        "canonical_key": "c47f96cc369520e6eb78ec01588ade6335e082a2"
+      }
+    },
+    {
+      "raw_id": 3154,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1979,
+        "canonical_key": "1e87f031d5bcd304a2d7a929684e7b047e470632"
+      }
+    },
+    {
+      "raw_id": 3181,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 483,
+        "canonical_key": "e75b2d347f91ec03af52347605d1cba5159aaf8f"
+      }
+    },
+    {
+      "raw_id": 3189,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3188,
+        "canonical_key": "de43d2485a3bfe36c89863e921b7ef78e97bc4f0"
+      }
+    },
+    {
+      "raw_id": 3203,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 150,
+        "canonical_key": "4bd05efe8dc14c710e6ea1a754b538fa993f2dc7"
+      }
+    },
+    {
+      "raw_id": 3216,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1658,
+        "canonical_key": "a077940e3f25fd84142f02ae342415cea93bc6ae"
+      }
+    },
+    {
+      "raw_id": 3217,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 917,
+        "canonical_key": "df3581659ef1f321b3b0df0e8be493b02630972b"
+      }
+    },
+    {
+      "raw_id": 3222,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2497,
+        "canonical_key": "729e3a4b26b19fd8266bb0ab6fcf4885dd1e6a78"
+      }
+    },
+    {
+      "raw_id": 3226,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2795,
+        "canonical_key": "e57a608c123cce37447b2b0428aef6271f7c359a"
+      }
+    },
+    {
+      "raw_id": 3227,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1192,
+        "canonical_key": "a6a4014993db9c7f1dc44628dc1530097a9c136a"
+      }
+    },
+    {
+      "raw_id": 3229,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1107,
+        "canonical_key": "603875007a303dc6bba45300c933cc77b664fbcf"
+      }
+    },
+    {
+      "raw_id": 3238,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1421,
+        "canonical_key": "6cb33fadf17a987874b2135ada76e46429da1a1a"
+      }
+    },
+    {
+      "raw_id": 3245,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1693,
+        "canonical_key": "5c47b1f76319c41c75c6275d5907abea5f644a02"
+      }
+    },
+    {
+      "raw_id": 3250,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2443,
+        "canonical_key": "75cd628dce6fdbeceb96a0eba1cbd4ff0c29a7a7"
+      }
+    },
+    {
+      "raw_id": 3253,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2449,
+        "canonical_key": "02cc98c1edca1149012b829088493e5d2c82316c"
+      }
+    },
+    {
+      "raw_id": 3261,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2387,
+        "canonical_key": "6fa435bfa9389027be0f1e2474cab6653fc788ce"
+      }
+    },
+    {
+      "raw_id": 3263,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2089,
+        "canonical_key": "ea206ff7ca1e24022c35aa6a0f429cc7911c8f6c"
+      }
+    },
+    {
+      "raw_id": 3272,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1125,
+        "canonical_key": "c6d628f02eaf9aa3d640a23db97770afedeea5ac"
+      }
+    },
+    {
+      "raw_id": 3277,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1719,
+        "canonical_key": "ef025bc561859fcaf7ec50690a88f03343471bcf"
+      }
+    },
+    {
+      "raw_id": 3286,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3137,
+        "canonical_key": "1f13e0c2040ca282cd509638ded2b6471965bfe1"
+      }
+    },
+    {
+      "raw_id": 3297,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1332,
+        "canonical_key": "38300283997d6bcc257c5312569e0a12eda924cc"
+      }
+    },
+    {
+      "raw_id": 3302,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2777,
+        "canonical_key": "9b0fedd52967f44904a803df8e38b303fa4ec3bf"
+      }
+    },
+    {
+      "raw_id": 3305,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2509,
+        "canonical_key": "d7b75993a99e021dc34d363e0758b545f9fd8c2e"
+      }
+    },
+    {
+      "raw_id": 3306,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2928,
+        "canonical_key": "693d6d39dddae6a1741a00668ae3366c5bec8154"
+      }
+    },
+    {
+      "raw_id": 3309,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2198,
+        "canonical_key": "bffa0869f8c8a169dace565db015ef78689f64cd"
+      }
+    },
+    {
+      "raw_id": 3316,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3156,
+        "canonical_key": "f6964c8e8af056284fa1bcfe1e1de4a213c31610"
+      }
+    },
+    {
+      "raw_id": 3317,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3113,
+        "canonical_key": "9654f237e0ca3192254d047d4ea69c81d42c59e9"
+      }
+    },
+    {
+      "raw_id": 3322,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 603,
+        "canonical_key": "cfecec6bf6d696940b2c1b08ae7e6d40f6f6cd9e"
+      }
+    },
+    {
+      "raw_id": 3324,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 914,
+        "canonical_key": "5e8c3751693e16dc6126b44149de5e91f74ba9d2"
+      }
+    },
+    {
+      "raw_id": 3334,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2756,
+        "canonical_key": "da0b7f790477751be6464853906d8a50c6a82fca"
+      }
+    },
+    {
+      "raw_id": 3340,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2035,
+        "canonical_key": "84a9d81524fa5855edacb0c56ac29d8b61f8c87b"
+      }
+    },
+    {
+      "raw_id": 3350,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 261,
+        "canonical_key": "6a874d653d4cf4734963a72cef0c19be09992d43"
+      }
+    },
+    {
+      "raw_id": 3355,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1842,
+        "canonical_key": "d95a4c2d9e5162a3684830aa824bc7c1f82cde99"
+      }
+    },
+    {
+      "raw_id": 3357,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 396,
+        "canonical_key": "fbca4602b72a5938b4d93d289b72f3f55ea109e8"
+      }
+    },
+    {
+      "raw_id": 3390,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 451,
+        "canonical_key": "78c7901315e1a7eee35b64febb3d62956a9cca6b"
+      }
+    },
+    {
+      "raw_id": 3403,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 818,
+        "canonical_key": "54e3a3a4b923c178abeca61c90f9f2c46a6afcd6"
+      }
+    },
+    {
+      "raw_id": 3411,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 718,
+        "canonical_key": "34dae345bb7c65a2d97d64065c3966bda454115f"
+      }
+    },
+    {
+      "raw_id": 3412,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2691,
+        "canonical_key": "8949a948a5513b487578072311c22b33c9c33d85"
+      }
+    },
+    {
+      "raw_id": 3415,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 92,
+        "canonical_key": "4b7d0a85510e9f90e1cbeea3cd56b211fa6c5beb"
+      }
+    },
+    {
+      "raw_id": 3423,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2638,
+        "canonical_key": "67e11271920e443ff37a90db10aae1746a205ca9"
+      }
+    },
+    {
+      "raw_id": 3430,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1026,
+        "canonical_key": "546da153162a8afa70becf639f9f792793e7e268"
+      }
+    },
+    {
+      "raw_id": 3431,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3321,
+        "canonical_key": "2fd748d6bd47de6e8110647b1c8907b55b5f0c6b"
+      }
+    },
+    {
+      "raw_id": 3432,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2623,
+        "canonical_key": "7f97db521a0ad26f45dc6f8d5a7230e88f6266e7"
+      }
+    },
+    {
+      "raw_id": 3446,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3371,
+        "canonical_key": "fb978abf526c035e1ac26e477374a186c8f06795"
+      }
+    },
+    {
+      "raw_id": 3447,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 109,
+        "canonical_key": "8a4ec80433bfeabab50fbc45d0e5d7f0c8272c68"
+      }
+    },
+    {
+      "raw_id": 3449,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2062,
+        "canonical_key": "93c2fe9125d835715006da1ae9071187ccc73fef"
+      }
+    },
+    {
+      "raw_id": 3470,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2288,
+        "canonical_key": "2011da97732382259f740e0d76bbdb90fa852842"
+      }
+    },
+    {
+      "raw_id": 3471,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 431,
+        "canonical_key": "788f8470e30906752d817946229d3c37f19b8e2f"
+      }
+    },
+    {
+      "raw_id": 3477,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2284,
+        "canonical_key": "1c0ca2485d9cb34e12f679a28998b6501a7ddedf"
+      }
+    },
+    {
+      "raw_id": 3479,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1715,
+        "canonical_key": "ff2dc3402e9513b5214c99e71837ee04315254fc"
+      }
+    },
+    {
+      "raw_id": 3488,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2110,
+        "canonical_key": "0f83e97a90df5507036b03d54d8d542df9621581"
+      }
+    },
+    {
+      "raw_id": 3493,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2885,
+        "canonical_key": "5edf5b316fc732952c8c9967d929384e8c9bde8d"
+      }
+    },
+    {
+      "raw_id": 3498,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 891,
+        "canonical_key": "6ff5599c18b17a4434639bb7c5512416394da73a"
+      }
+    },
+    {
+      "raw_id": 3504,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2311,
+        "canonical_key": "98c0e3e8bb9e8c6b416ccbb60e466ce7483e0fb2"
+      }
+    },
+    {
+      "raw_id": 3512,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 264,
+        "canonical_key": "069a69b291ba3b9105c98ce03edd68ef6b81468a"
+      }
+    },
+    {
+      "raw_id": 3522,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2688,
+        "canonical_key": "f5a9722ab10195bc78ab5400451625e11ca152bd"
+      }
+    },
+    {
+      "raw_id": 3529,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3290,
+        "canonical_key": "4b1557886d3ef2efdfb557eec51bfafbb3395024"
+      }
+    },
+    {
+      "raw_id": 3530,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 807,
+        "canonical_key": "5a5f0678b2c67818fcda009771e92b77590e7c16"
+      }
+    },
+    {
+      "raw_id": 3541,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2658,
+        "canonical_key": "4f2e7b2b610fd962d440eb6c1cb99c6b1f87bf9a"
+      }
+    },
+    {
+      "raw_id": 3556,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2606,
+        "canonical_key": "9fa8a564d79bfea03e44d93d0a0df6f0b1ac77f6"
+      }
+    },
+    {
+      "raw_id": 3561,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1173,
+        "canonical_key": "877dd7f48f0d3277cb3194f78191d33a2cf86288"
+      }
+    },
+    {
+      "raw_id": 3563,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1998,
+        "canonical_key": "13bce1b8ed5f388fe99d065ce44448be6cf5d4f4"
+      }
+    },
+    {
+      "raw_id": 3574,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1386,
+        "canonical_key": "f20d80883e990f83e2021dc42f12423bc5c967ea"
+      }
+    },
+    {
+      "raw_id": 3578,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2730,
+        "canonical_key": "cf22b2824224a532444dcc865a8cce6d2d3c3d05"
+      }
+    },
+    {
+      "raw_id": 3581,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2818,
+        "canonical_key": "132421adf6ae9142f54dff2e9e81a05f698537d9"
+      }
+    },
+    {
+      "raw_id": 3587,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2249,
+        "canonical_key": "11bb1dd0cb405283f124d87c6c1452765ba4a34c"
+      }
+    },
+    {
+      "raw_id": 3588,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 636,
+        "canonical_key": "85c0ffb4665a685bcbe233085781fec1afdc1dc1"
+      }
+    },
+    {
+      "raw_id": 3591,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2166,
+        "canonical_key": "dfd91a0da2ba6976abe45418edde2384485d5f59"
+      }
+    },
+    {
+      "raw_id": 3596,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 776,
+        "canonical_key": "b5d3512e3354a2317dc5a820b06e1277628764a6"
+      }
+    },
+    {
+      "raw_id": 3612,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1918,
+        "canonical_key": "50a7683d62c337571c708501db5011897aef16bb"
+      }
+    },
+    {
+      "raw_id": 3628,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2720,
+        "canonical_key": "c2370201ac04a2529031b419bd572de2028ddb06"
+      }
+    },
+    {
+      "raw_id": 3629,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1024,
+        "canonical_key": "347c6fd79183ee223580b58aee9ebf9b78edc37b"
+      }
+    },
+    {
+      "raw_id": 3650,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1245,
+        "canonical_key": "c200c2e8468cb5cc69b02f28baf4c4e6c46e4843"
+      }
+    },
+    {
+      "raw_id": 3653,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2778,
+        "canonical_key": "e6d2f60e5d5caf5caf1df5363949f92206ff0fc8"
+      }
+    },
+    {
+      "raw_id": 3655,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3439,
+        "canonical_key": "888ba78529d5ed47e14a4c042a2ec92dfdcbb57a"
+      }
+    },
+    {
+      "raw_id": 3659,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1700,
+        "canonical_key": "2cbd105d59ab213b286a396ee3f450bd686186f9"
+      }
+    },
+    {
+      "raw_id": 3660,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1950,
+        "canonical_key": "95ad2f084031afff03820ec0811ad5fb2bcbe89e"
+      }
+    },
+    {
+      "raw_id": 3687,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3194,
+        "canonical_key": "4a72829840d719a2f72a78814415798770b05f1c"
+      }
+    },
+    {
+      "raw_id": 3690,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3466,
+        "canonical_key": "ca52ef1cdaaa8fc231204abccf91a2cb35e000e6"
+      }
+    },
+    {
+      "raw_id": 3692,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 722,
+        "canonical_key": "1f99afc8c245c2ce267305845c934db691dff884"
+      }
+    },
+    {
+      "raw_id": 3695,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2572,
+        "canonical_key": "fc20a45a90a853d35d548da717b0382d1aefa0f8"
+      }
+    },
+    {
+      "raw_id": 3708,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 290,
+        "canonical_key": "ece7f0b3b1ba779b4cc1ae532b853fe1adefeb81"
+      }
+    },
+    {
+      "raw_id": 3709,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2618,
+        "canonical_key": "d4e6d77290adacec34437789fd307e5a33be25a9"
+      }
+    },
+    {
+      "raw_id": 3714,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3139,
+        "canonical_key": "3c9c822c6f9ffca7c0052b1c74db39a17a5c05a4"
+      }
+    },
+    {
+      "raw_id": 3721,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 139,
+        "canonical_key": "c62d407bfc65e5e077b98d604b754ff069b41834"
+      }
+    },
+    {
+      "raw_id": 3743,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 560,
+        "canonical_key": "7675516d72f37e681234761070f78d1d6ed64438"
+      }
+    },
+    {
+      "raw_id": 3746,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3346,
+        "canonical_key": "422db2d03f3cfccc3490390a0b61d76aac18db02"
+      }
+    },
+    {
+      "raw_id": 3747,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3144,
+        "canonical_key": "1a9a28ede4e3e809db56b991a1dc84f26bbd7bec"
+      }
+    },
+    {
+      "raw_id": 3751,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1936,
+        "canonical_key": "39d3c047b581d794b46630ae9754ddf0e19c7260"
+      }
+    },
+    {
+      "raw_id": 3770,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3220,
+        "canonical_key": "c932ded2f52531dea89ec4c43c0dc831db150f98"
+      }
+    },
+    {
+      "raw_id": 3775,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1576,
+        "canonical_key": "b05eefac461a5cf145e0d92099620cdaed88a9da"
+      }
+    },
+    {
+      "raw_id": 3776,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3538,
+        "canonical_key": "c56d79d97e0536c9040b8ce73b7bed0ff0838ab8"
+      }
+    },
+    {
+      "raw_id": 3783,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2972,
+        "canonical_key": "b4d00c9a595bcfb9434a386694ff9dafc4983774"
+      }
+    },
+    {
+      "raw_id": 3786,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2349,
+        "canonical_key": "0e078c68656e67885a2f8b8367044ff2c350ded3"
+      }
+    },
+    {
+      "raw_id": 3801,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2218,
+        "canonical_key": "798c34ee0fa2e571cd257e2963f0f1322e15aacd"
+      }
+    },
+    {
+      "raw_id": 3803,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3167,
+        "canonical_key": "3513c2da4b629a6e8a8f93dde78031cc7d63c063"
+      }
+    },
+    {
+      "raw_id": 3805,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3024,
+        "canonical_key": "227d78e2b8e76f6cd5a27c31e4be3f6ddaa26d2e"
+      }
+    },
+    {
+      "raw_id": 3809,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2642,
+        "canonical_key": "a7387e5eefa6c0fa672f78434d88b793168f1d6e"
+      }
+    },
+    {
+      "raw_id": 3814,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1912,
+        "canonical_key": "c8cf92df1ef8187742c6aa48b4e6ffe33b0f6fc2"
+      }
+    },
+    {
+      "raw_id": 3818,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 300,
+        "canonical_key": "f4b0eb249b23943f87c7caf38c73b25ae5d3c9ec"
+      }
+    },
+    {
+      "raw_id": 3824,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1309,
+        "canonical_key": "ea5c18f50ffac5b1f1ac091f807cd6743c637795"
+      }
+    },
+    {
+      "raw_id": 3829,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3507,
+        "canonical_key": "e78c70aa7af7c4fa39b07a51841e5f1497139762"
+      }
+    },
+    {
+      "raw_id": 3835,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 626,
+        "canonical_key": "bff5e18316194c2be64938dbbb481c7f4d498138"
+      }
+    },
+    {
+      "raw_id": 3841,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 15,
+        "canonical_key": "82012825dec163d8ad1a94c9c9a9df9170b19f6c"
+      }
+    },
+    {
+      "raw_id": 3842,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2957,
+        "canonical_key": "c25bf0e0dd821580efa3ca31c6db8c1ee21dc477"
+      }
+    },
+    {
+      "raw_id": 3844,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 368,
+        "canonical_key": "077e5653581f4735d6d1c111fc98345d82fdbbd6"
+      }
+    },
+    {
+      "raw_id": 3845,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1927,
+        "canonical_key": "1c7e158e43fa2807b7a1179edfa90ad077e616ab"
+      }
+    },
+    {
+      "raw_id": 3852,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2896,
+        "canonical_key": "8379182f66bc315651d50c5cca7f819d4e76bb4f"
+      }
+    },
+    {
+      "raw_id": 3865,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 234,
+        "canonical_key": "06ada7134d3b9e586a0617aeafb5e24792c7e2af"
+      }
+    },
+    {
+      "raw_id": 3869,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3831,
+        "canonical_key": "3dd6b16d9a55af5bd3d579a398b0b7a470af204a"
+      }
+    },
+    {
+      "raw_id": 3870,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2891,
+        "canonical_key": "52bed57a4943551f5d1c905dafc1e9932b8a2382"
+      }
+    },
+    {
+      "raw_id": 3889,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3496,
+        "canonical_key": "66aed89fd15633cf3c3afc7ab33e2ea2b22ea5ce"
+      }
+    },
+    {
+      "raw_id": 3891,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 687,
+        "canonical_key": "9dab17419473c721ca17e38363ca2cce474d9b02"
+      }
+    },
+    {
+      "raw_id": 3896,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2823,
+        "canonical_key": "6b769e9ed0918bff1562660a6c35f583f6494eed"
+      }
+    },
+    {
+      "raw_id": 3899,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2397,
+        "canonical_key": "81677300045212ae74bb7eb3fa581c42ba02c33e"
+      }
+    },
+    {
+      "raw_id": 3905,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1237,
+        "canonical_key": "751773d08bed2b55bdf10cc15836f87f475659bf"
+      }
+    },
+    {
+      "raw_id": 3909,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1410,
+        "canonical_key": "4888624c30c7ed627e1bab2fb75b94412faef9b5"
+      }
+    },
+    {
+      "raw_id": 3912,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3421,
+        "canonical_key": "eafcdf31699d9b56581c4dd1345346107a94e88b"
+      }
+    },
+    {
+      "raw_id": 3933,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 38,
+        "canonical_key": "9b9fe1ffbdd6334ee66e2b959345e53b11ed7a90"
+      }
+    },
+    {
+      "raw_id": 3937,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1736,
+        "canonical_key": "49f64822a8b542bb9eea5ad1c437f955a7d9dadb"
+      }
+    },
+    {
+      "raw_id": 3944,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1596,
+        "canonical_key": "bf2a4fca2a20085a624ee77c9d6f32c7d24b220c"
+      }
+    },
+    {
+      "raw_id": 3945,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2608,
+        "canonical_key": "522c0edc90bdd58af204d2ba18298dc3b5423fd1"
+      }
+    },
+    {
+      "raw_id": 3960,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2491,
+        "canonical_key": "99e27948fc5d4c352ee7f0ae20671bcb4697a95c"
+      }
+    },
+    {
+      "raw_id": 3962,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1653,
+        "canonical_key": "be55fb0946d188fb855146988e95db2323ab3d7c"
+      }
+    },
+    {
+      "raw_id": 3964,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3619,
+        "canonical_key": "c431448f6826348c48815a0d79e38838895c443d"
+      }
+    },
+    {
+      "raw_id": 3970,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3376,
+        "canonical_key": "1a051cf6fecf72db6517696675d040b2b7efffb5"
+      }
+    },
+    {
+      "raw_id": 3976,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3219,
+        "canonical_key": "dfa8e018554ec8f174f141cad2e9d89dd2659638"
+      }
+    },
+    {
+      "raw_id": 3978,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 624,
+        "canonical_key": "611e58b6b12cc6ca0c2dbb05b656663a1b6364f0"
+      }
+    },
+    {
+      "raw_id": 3982,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 447,
+        "canonical_key": "e38672568f7c16539e2b80dc29b14d412f8f1754"
+      }
+    },
+    {
+      "raw_id": 3986,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1140,
+        "canonical_key": "cbc024eb71e597a5759f95894012a8cd19e81db5"
+      }
+    },
+    {
+      "raw_id": 3989,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 979,
+        "canonical_key": "f04e4b0be268324aea03564a2573e20a4425c6a7"
+      }
+    },
+    {
+      "raw_id": 4008,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1294,
+        "canonical_key": "e35bcb06f121a8266c5a80859b044d6718faf126"
+      }
+    },
+    {
+      "raw_id": 4011,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 878,
+        "canonical_key": "d2eb647a5f31703ffb7dbfcf06eb85e3a5ca10d2"
+      }
+    },
+    {
+      "raw_id": 4020,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1050,
+        "canonical_key": "c232a18fdea42d768e5816ff04bcf09ef8e0b7e1"
+      }
+    },
+    {
+      "raw_id": 4024,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3515,
+        "canonical_key": "dd9c0d80905022960e7121afab796aa28746614b"
+      }
+    },
+    {
+      "raw_id": 4026,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1687,
+        "canonical_key": "ea8e8699e08e6790493002de87c94e00e844e932"
+      }
+    },
+    {
+      "raw_id": 4032,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 327,
+        "canonical_key": "0edd95fccfb2f00810179d2e2b29cdbe0e41e433"
+      }
+    },
+    {
+      "raw_id": 4035,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2327,
+        "canonical_key": "0b9dbb5ad88135fd3ba35dd7a25425ffabf80a69"
+      }
+    },
+    {
+      "raw_id": 4040,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3864,
+        "canonical_key": "f005864d908a48639e4861171a64371d07e7f1b6"
+      }
+    },
+    {
+      "raw_id": 4041,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1639,
+        "canonical_key": "3f9e4bc469964e57f259df504ae3cd2c03b11e1d"
+      }
+    },
+    {
+      "raw_id": 4042,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 278,
+        "canonical_key": "39d47beb3b1962651d31eebf69d01029cd76e5bb"
+      }
+    },
+    {
+      "raw_id": 4046,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1419,
+        "canonical_key": "7b4ee94a2949f496117c6676c026d1124ee2faa1"
+      }
+    },
+    {
+      "raw_id": 4053,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2065,
+        "canonical_key": "0b9f1adcd5849918ec4dcaf5b4ad382916cb4722"
+      }
+    },
+    {
+      "raw_id": 4067,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1879,
+        "canonical_key": "d96a6074ae21ddb37a13170b3ad1199a02dab73a"
+      }
+    },
+    {
+      "raw_id": 4071,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3550,
+        "canonical_key": "bc418f13a1ade8285f117fe61c9f60aab06eed5c"
+      }
+    },
+    {
+      "raw_id": 4076,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3977,
+        "canonical_key": "9bc042c7fdc6c109b49e029860527e6b044351b2"
+      }
+    },
+    {
+      "raw_id": 4100,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 895,
+        "canonical_key": "b10037b154c39b4a615f9b330a839cce52d843b6"
+      }
+    },
+    {
+      "raw_id": 4108,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 295,
+        "canonical_key": "ab60c5c3bfbb8943b35c74e42f7e44302c569dc6"
+      }
+    },
+    {
+      "raw_id": 4111,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1930,
+        "canonical_key": "cc97e84758784ff9c13c0948c382e9d255044b3b"
+      }
+    },
+    {
+      "raw_id": 4113,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2577,
+        "canonical_key": "6634085efd1dfe2d86f5a034ca03b508f443bea7"
+      }
+    },
+    {
+      "raw_id": 4129,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1704,
+        "canonical_key": "536d188fbfe8ff65876bf7c0b1c8af9ae84c5db4"
+      }
+    },
+    {
+      "raw_id": 4135,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3925,
+        "canonical_key": "74a95226cee0ca075ac2fee17fa83f30b7a07589"
+      }
+    },
+    {
+      "raw_id": 4138,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1491,
+        "canonical_key": "3fc2328300655db10407ff06a1c9043c0c5a8ff5"
+      }
+    },
+    {
+      "raw_id": 4139,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 195,
+        "canonical_key": "f78a7bdbf05c5e4574be2cf1af8a0f780757dbba"
+      }
+    },
+    {
+      "raw_id": 4141,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3129,
+        "canonical_key": "6587d5d24bb8ece03db7ddae5eb21bae6aedc4db"
+      }
+    },
+    {
+      "raw_id": 4143,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2085,
+        "canonical_key": "304d0a298ed764d1a2226ed06a39112b1cc24a1e"
+      }
+    },
+    {
+      "raw_id": 4157,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3438,
+        "canonical_key": "4db7d0e314b53f042e9ad02a2284abdbc1c972df"
+      }
+    },
+    {
+      "raw_id": 4166,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2800,
+        "canonical_key": "93c6ffc240db6ee3913a2e5fb4aa8d2bd90892d5"
+      }
+    },
+    {
+      "raw_id": 4168,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 823,
+        "canonical_key": "2f844394f99f2aeaa2d83600fedcec6f98072c92"
+      }
+    },
+    {
+      "raw_id": 4169,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2999,
+        "canonical_key": "f016f3ac494e135fe7a0bf583ef23a033803e02e"
+      }
+    },
+    {
+      "raw_id": 4172,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2670,
+        "canonical_key": "a58691c60398dcf25f7245857e40849f7dd6a5cc"
+      }
+    },
+    {
+      "raw_id": 4173,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2537,
+        "canonical_key": "0afa5f82f77ec5aa9ec9d0892c3d0d290efdf3e0"
+      }
+    },
+    {
+      "raw_id": 4177,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 389,
+        "canonical_key": "2b8021cefdb949b8b67686fdbd5f6bd1a869568d"
+      }
+    },
+    {
+      "raw_id": 4183,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 124,
+        "canonical_key": "786e91745da8405b62d644d43296ff1e58c822c0"
+      }
+    },
+    {
+      "raw_id": 4189,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2723,
+        "canonical_key": "27cafbcb6363e29e5552ec572ea9da5ac8c6fd1b"
+      }
+    },
+    {
+      "raw_id": 4191,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 540,
+        "canonical_key": "aa055ef850de7e0a89f1b6d5a68d45c246b4513f"
+      }
+    },
+    {
+      "raw_id": 4192,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2555,
+        "canonical_key": "7e19bfaf0529ad19486fa605b0f842a51a40a68b"
+      }
+    },
+    {
+      "raw_id": 4197,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2195,
+        "canonical_key": "e9aa73f7592b1ccd0f0caaa83fde8896b71e2a1a"
+      }
+    },
+    {
+      "raw_id": 4204,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3548,
+        "canonical_key": "23e6819eb088536bd734e4e9a45f89ce323cfce6"
+      }
+    },
+    {
+      "raw_id": 4205,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1598,
+        "canonical_key": "c8c369327848134ac4a2ee35302d7a2677877f97"
+      }
+    },
+    {
+      "raw_id": 4206,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3950,
+        "canonical_key": "535d860e2f524ec0a0ef33db21e9fb132795b038"
+      }
+    },
+    {
+      "raw_id": 4209,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1210,
+        "canonical_key": "15d9bc54aa53ab3876d75d898692bb879116317d"
+      }
+    },
+    {
+      "raw_id": 4210,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3599,
+        "canonical_key": "f67b09e30820ab38e709e55400614e0923c8ce41"
+      }
+    },
+    {
+      "raw_id": 4211,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2069,
+        "canonical_key": "f5d1917daf91c3ff374710cfd5cc4377e136529d"
+      }
+    },
+    {
+      "raw_id": 4212,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2659,
+        "canonical_key": "ea001e8fe179d0810243469408172ab928409e4f"
+      }
+    },
+    {
+      "raw_id": 4219,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1570,
+        "canonical_key": "a0c1f232af001389f500ff65117c691bb792f4d6"
+      }
+    },
+    {
+      "raw_id": 4225,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1934,
+        "canonical_key": "c94f20b6f4c29d064060d93e2ac9728898131f30"
+      }
+    },
+    {
+      "raw_id": 4233,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4103,
+        "canonical_key": "6112c0d722cb77250c839f3e6a2a1c673f3816b9"
+      }
+    },
+    {
+      "raw_id": 4238,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2124,
+        "canonical_key": "30eb98dada87cd53125c7dc2337f7e7be3175d3a"
+      }
+    },
+    {
+      "raw_id": 4241,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3013,
+        "canonical_key": "7e1dd931457d1bce13aed8e34c85550ff8ad37fb"
+      }
+    },
+    {
+      "raw_id": 4255,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 791,
+        "canonical_key": "21496f4dc1504d83bb9de5595b3f9f4890224ee6"
+      }
+    },
+    {
+      "raw_id": 4257,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1246,
+        "canonical_key": "e3a36d07a0620ee3263b36edb8a793bb368720af"
+      }
+    },
+    {
+      "raw_id": 4259,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1706,
+        "canonical_key": "cad696cb4f6ed5d91fa7b1291ba931e900664c8c"
+      }
+    },
+    {
+      "raw_id": 4266,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 566,
+        "canonical_key": "f32fdbcfb0a6174ff775832bfd8373b0a96f9549"
+      }
+    },
+    {
+      "raw_id": 4270,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1611,
+        "canonical_key": "cd44e2d9c360af6cfa119cfbfeff1dccea22bd52"
+      }
+    },
+    {
+      "raw_id": 4271,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2332,
+        "canonical_key": "805eb853b24f7cd598cfe9c4c3010de3dcccdc00"
+      }
+    },
+    {
+      "raw_id": 4284,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2531,
+        "canonical_key": "f3f8f4eb73bf802b5b36c37c771c409f62963dad"
+      }
+    },
+    {
+      "raw_id": 4288,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 171,
+        "canonical_key": "085ddabbbaf901724734ad2dffdbb692975683b3"
+      }
+    },
+    {
+      "raw_id": 4294,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 3351,
+        "canonical_key": "e344518677364ff4bf8852c9a260477aaf3b4c16"
+      }
+    },
+    {
+      "raw_id": 4307,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4277,
+        "canonical_key": "fa27a14effec758052ac80d53379b7a48011fa6d"
+      }
+    },
+    {
+      "raw_id": 4314,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1283,
+        "canonical_key": "3438aa31c674a05ae673ab9e19c17dee92497611"
+      }
+    },
+    {
+      "raw_id": 4316,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1538,
+        "canonical_key": "05c4f4434753f55e565427df7a933fb0fb240234"
+      }
+    },
+    {
+      "raw_id": 4318,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4029,
+        "canonical_key": "ce44e2758e599cec9366c0f176f641bf7e42e66d"
+      }
+    },
+    {
+      "raw_id": 4322,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1559,
+        "canonical_key": "05ff6d6f246c6f1566f9c186017052b5c5159f40"
+      }
+    },
+    {
+      "raw_id": 4328,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4128,
+        "canonical_key": "cff2df8691688e2d35229908c35af0c6de27a619"
+      }
+    },
+    {
+      "raw_id": 4329,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2677,
+        "canonical_key": "d01c5d4898957053aec48e3a1dcdbfb51f910bc6"
+      }
+    },
+    {
+      "raw_id": 4333,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2297,
+        "canonical_key": "38996ddd510680cc19ccaf0079378a6034019b70"
+      }
+    },
+    {
+      "raw_id": 4354,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 1830,
+        "canonical_key": "214b96b04fec783493a4e297cd7daa54e095e1cb"
+      }
+    },
+    {
+      "raw_id": 4355,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 43,
+        "canonical_key": "a48711756b72fa9d5a410ff954dc41bc5064d02d"
+      }
+    },
+    {
+      "raw_id": 4357,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 792,
+        "canonical_key": "94492cef832c133a423b8593c7e573afe80bf9ab"
+      }
+    },
+    {
+      "raw_id": 4358,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 225,
+        "canonical_key": "6019b57a159aa72d896eb9d73f979f82b9f7095a"
+      }
+    },
+    {
+      "raw_id": 4359,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2214,
+        "canonical_key": "13dc942574e475e278cdb2a38c58915d1c3a4fe9"
+      }
+    },
+    {
+      "raw_id": 4361,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 2900,
+        "canonical_key": "a21ce3b1802a1511e3f1c182336bf25a66d37936"
+      }
+    },
+    {
+      "raw_id": 4367,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 697,
+        "canonical_key": "5a29c0cd2a49d1cdb7d5aedaef6e9646deb0f0ec"
+      }
+    },
+    {
+      "raw_id": 4633,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4619,
+        "canonical_key": "b1b8f7be9c995aee814774823476f453bd320ad9"
+      }
+    },
+    {
+      "raw_id": 4801,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4780,
+        "canonical_key": "7cca2e6972fad3d17d5094f35cd8231c1e2dea0b"
+      }
+    },
+    {
+      "raw_id": 5037,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4712,
+        "canonical_key": "632f6000b45e4abfbb17c4dff57210c1d53ddce0"
+      }
+    },
+    {
+      "raw_id": 5204,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5169,
+        "canonical_key": "08411cad732031b8c028704156adc6704babac28"
+      }
+    },
+    {
+      "raw_id": 5411,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5294,
+        "canonical_key": "766e6f4ac76669d416dcc94ec53c6e0ab10ce7ea"
+      }
+    },
+    {
+      "raw_id": 5466,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4665,
+        "canonical_key": "f2012aff77ea45a59ed5eb24b993197a3af9a710"
+      }
+    },
+    {
+      "raw_id": 5543,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5523,
+        "canonical_key": "48394efc56b2a037378975610acc359751f900b9"
+      }
+    },
+    {
+      "raw_id": 5597,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5312,
+        "canonical_key": "8394ea5902e3f435fd895570047496a1ffd623db"
+      }
+    },
+    {
+      "raw_id": 5719,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5676,
+        "canonical_key": "ed65aae359f2c7d2c5c1dfe0918380aac3abe1fd"
+      }
+    },
+    {
+      "raw_id": 5735,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4967,
+        "canonical_key": "b449c3976075851772489f7bcb822304e67485ff"
+      }
+    },
+    {
+      "raw_id": 5803,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5376,
+        "canonical_key": "fe6c7b0a28ed60789eca66e40ca15cb91fd8b34b"
+      }
+    },
+    {
+      "raw_id": 5809,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5778,
+        "canonical_key": "179ae758f40606a08b34957ac781c138f3032ed0"
+      }
+    },
+    {
+      "raw_id": 5975,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5159,
+        "canonical_key": "5a615c1672d678202775c18b1095a4d6e9d58890"
+      }
+    },
+    {
+      "raw_id": 6018,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5031,
+        "canonical_key": "143826507914059de2f04bd6c9456c4e58c7d0b6"
+      }
+    },
+    {
+      "raw_id": 6079,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4923,
+        "canonical_key": "ce4bc4b8f468aca211092e91dfe20abc4d93f96b"
+      }
+    },
+    {
+      "raw_id": 6111,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5064,
+        "canonical_key": "71a19857281d057b0d1e98374d4d4d5a1a284b37"
+      }
+    },
+    {
+      "raw_id": 6266,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4830,
+        "canonical_key": "7a036d0a4b2b91ada6b14ddde7e0643d1141d3b2"
+      }
+    },
+    {
+      "raw_id": 6327,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5740,
+        "canonical_key": "994096fa5cf32ead7241187b591b9533d0cac583"
+      }
+    },
+    {
+      "raw_id": 6353,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4479,
+        "canonical_key": "da02ad5b63ef2db5721a4df6068c85097d8816e3"
+      }
+    },
+    {
+      "raw_id": 6411,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5858,
+        "canonical_key": "36766997799eec1c939dc9a6cad43d3e92a4fcc7"
+      }
+    },
+    {
+      "raw_id": 6421,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6003,
+        "canonical_key": "c177fceea53d215c99904265ff04093930d627cb"
+      }
+    },
+    {
+      "raw_id": 6425,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6061,
+        "canonical_key": "72ce24216d738808a2b93ebb02be1b8cd265440e"
+      }
+    },
+    {
+      "raw_id": 6447,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5934,
+        "canonical_key": "471a8174e772702e4a9aa110fad1da4776419e61"
+      }
+    },
+    {
+      "raw_id": 6474,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6238,
+        "canonical_key": "eb01c51440bb391c460ae6f75d5d563e39e6fa88"
+      }
+    },
+    {
+      "raw_id": 6542,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4469,
+        "canonical_key": "a44a4786c52a711d3478473415bb1b8574a4a4c3"
+      }
+    },
+    {
+      "raw_id": 6601,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5379,
+        "canonical_key": "3eae4fbda2a0638fc6ae955ac94436e65f8fd44a"
+      }
+    },
+    {
+      "raw_id": 6632,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5663,
+        "canonical_key": "da77bcb3240d0bc4e01672f4d1ca1b98e4c23c0a"
+      }
+    },
+    {
+      "raw_id": 6670,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6535,
+        "canonical_key": "7e8e39ad5b97aec25cb6b54152e5eaa8b9982011"
+      }
+    },
+    {
+      "raw_id": 6701,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5303,
+        "canonical_key": "fc9330c62f6ad7ce7bae106257145b70c2e2bfec"
+      }
+    },
+    {
+      "raw_id": 6744,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6688,
+        "canonical_key": "624fcda7a66933202db72c89aec49a0d1962333a"
+      }
+    },
+    {
+      "raw_id": 6799,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6023,
+        "canonical_key": "f8824555d18248367e7f40e7a5e85d5a2e0f7c7a"
+      }
+    },
+    {
+      "raw_id": 6810,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6751,
+        "canonical_key": "fabc11b5fe55d48306ade5441584c9ad6d87ab27"
+      }
+    },
+    {
+      "raw_id": 6816,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6126,
+        "canonical_key": "0e06a386268bfd2a2f98c129cd4342fc44d0df65"
+      }
+    },
+    {
+      "raw_id": 6927,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5834,
+        "canonical_key": "db90aa9debbfdf41777bbf626a9532741dac2b8e"
+      }
+    },
+    {
+      "raw_id": 6930,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6118,
+        "canonical_key": "dce851b07a47d599adae54bb53077beb07bc49c0"
+      }
+    },
+    {
+      "raw_id": 6957,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5768,
+        "canonical_key": "4654e5dfc750713f67ffb45ccaca33bdb18324b7"
+      }
+    },
+    {
+      "raw_id": 7032,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6146,
+        "canonical_key": "9774dfcc9663bf9e317738b1281b65ce4500f44f"
+      }
+    },
+    {
+      "raw_id": 7049,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5503,
+        "canonical_key": "047019b328b4721870bf6d14ef0b90772fbb3904"
+      }
+    },
+    {
+      "raw_id": 7193,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5707,
+        "canonical_key": "dec6a56fbc02286da930a2ffe44954436c19d23a"
+      }
+    },
+    {
+      "raw_id": 7207,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6096,
+        "canonical_key": "53adf9bb6ca5ad1fcae9dc97064ffce317205ac7"
+      }
+    },
+    {
+      "raw_id": 7212,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6470,
+        "canonical_key": "91f096e821c9cb15fda9884538d48524880ec656"
+      }
+    },
+    {
+      "raw_id": 7268,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6448,
+        "canonical_key": "03c2602cf191165fd1b3c66ca502849b018e669b"
+      }
+    },
+    {
+      "raw_id": 7277,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5426,
+        "canonical_key": "ffb6a8f34d8c7f400b9b2f809611270b1cf1c186"
+      }
+    },
+    {
+      "raw_id": 7287,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6343,
+        "canonical_key": "16ab894c159cf13ffa4355050b253655a9755625"
+      }
+    },
+    {
+      "raw_id": 7324,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6441,
+        "canonical_key": "8597e71b4e983a0039401344f576f17c7cf654df"
+      }
+    },
+    {
+      "raw_id": 7336,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6978,
+        "canonical_key": "d948397b486d8c15b985e072a4bc4fe642867375"
+      }
+    },
+    {
+      "raw_id": 7337,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6396,
+        "canonical_key": "c246ea96b41ba20f5ad595a4e992a9d8366aa775"
+      }
+    },
+    {
+      "raw_id": 7361,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5157,
+        "canonical_key": "b4809b52d0dfbc93b046992d0d20a28b4b53196c"
+      }
+    },
+    {
+      "raw_id": 7363,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5983,
+        "canonical_key": "6c6b27f8191a7c50e7fe7360f8f87c3a0b9cc926"
+      }
+    },
+    {
+      "raw_id": 7371,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5526,
+        "canonical_key": "2e04ab7e909cb4ce34edc59f42474c904b1e5a45"
+      }
+    },
+    {
+      "raw_id": 7398,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4529,
+        "canonical_key": "0369207ceb3ec21603fee07532785fc00b35c29a"
+      }
+    },
+    {
+      "raw_id": 7479,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5323,
+        "canonical_key": "6773c54a1e4973af92a609f1da010ab40840ebdb"
+      }
+    },
+    {
+      "raw_id": 7531,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5382,
+        "canonical_key": "b1265707f1b96ad5b2e6d4a5ab69458e1caeeb71"
+      }
+    },
+    {
+      "raw_id": 7605,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5706,
+        "canonical_key": "ece546d5328f67fa23cc1d9113567b7f17741d43"
+      }
+    },
+    {
+      "raw_id": 7614,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5718,
+        "canonical_key": "973081e7fa5a4c49c2e4912cf1b76c6ae444bf88"
+      }
+    },
+    {
+      "raw_id": 7721,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5481,
+        "canonical_key": "541c477ec3c545f7261b055cc37d3789a7499f04"
+      }
+    },
+    {
+      "raw_id": 7733,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5990,
+        "canonical_key": "472b75c10e1da6449420f63fbb2062fa60bebdfb"
+      }
+    },
+    {
+      "raw_id": 7881,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4593,
+        "canonical_key": "dcd5e3f8acbf645e6269d2270e46c823e9ef8921"
+      }
+    },
+    {
+      "raw_id": 7889,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6190,
+        "canonical_key": "c2a3a3685c4f99782ae7d7d25925010824c0ee37"
+      }
+    },
+    {
+      "raw_id": 7930,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7445,
+        "canonical_key": "a417252db33a0e64dd05fd02305fa6081c5b2ce6"
+      }
+    },
+    {
+      "raw_id": 7949,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4786,
+        "canonical_key": "9e6b25ea89e86b1419bb0e75a192ee84daa6bf0b"
+      }
+    },
+    {
+      "raw_id": 8031,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4384,
+        "canonical_key": "a8e009a4a6376955d2cad4f03a7af1ddb1ea7142"
+      }
+    },
+    {
+      "raw_id": 8108,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7150,
+        "canonical_key": "fc6be5418b1bd100e565749edda1f0574d487544"
+      }
+    },
+    {
+      "raw_id": 8116,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7273,
+        "canonical_key": "63fa87f87ed1ba23b4ab40861ecd5cc7662c1b10"
+      }
+    },
+    {
+      "raw_id": 8144,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5200,
+        "canonical_key": "6f821017f4f1ae1e33b89fd78f206eb79acbe41b"
+      }
+    },
+    {
+      "raw_id": 8148,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7425,
+        "canonical_key": "1c666518207e6ef33f91889c2d56243a7f6ed59e"
+      }
+    },
+    {
+      "raw_id": 8300,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4587,
+        "canonical_key": "20319cb5ca2a9c55f655cf9f3d1ad4fb1fa8690d"
+      }
+    },
+    {
+      "raw_id": 8332,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7795,
+        "canonical_key": "d3d855eff92a56e0661752ee67d47aa82f8ebd57"
+      }
+    },
+    {
+      "raw_id": 8374,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7018,
+        "canonical_key": "83aa0aa7b7030d472f7313ca2038bd4077de8fff"
+      }
+    },
+    {
+      "raw_id": 8379,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4805,
+        "canonical_key": "02491ad86c776dd760edebc64540542dcc20b164"
+      }
+    },
+    {
+      "raw_id": 8423,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7243,
+        "canonical_key": "16e965fd6fcc5d224f7e0ac1e901f3fa4864c68d"
+      }
+    },
+    {
+      "raw_id": 8450,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6428,
+        "canonical_key": "0b5bc461134aa9b406e3083c0651162441d40e4b"
+      }
+    },
+    {
+      "raw_id": 8534,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5468,
+        "canonical_key": "d8a9b8c3890d0fe36b2b2885b852272b4880368c"
+      }
+    },
+    {
+      "raw_id": 8580,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 8211,
+        "canonical_key": "dbef567c82e1a64aaf567b920fb1ac7ae016468d"
+      }
+    },
+    {
+      "raw_id": 8685,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5465,
+        "canonical_key": "4c19ffbbae9d79c276fc2e72bfe6a2d30942e7b1"
+      }
+    },
+    {
+      "raw_id": 8757,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6104,
+        "canonical_key": "d290a2daa0cd05634e8f33215be9673df669a1d6"
+      }
+    },
+    {
+      "raw_id": 8806,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4417,
+        "canonical_key": "167db244ba1f8f25ede1cf936d21287d1428a483"
+      }
+    },
+    {
+      "raw_id": 8826,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6099,
+        "canonical_key": "1c1994adb98c21822d271026e3359e1f7c5cb83f"
+      }
+    },
+    {
+      "raw_id": 8829,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6986,
+        "canonical_key": "d1932fad59be564e4979185487b3eecc13e53e96"
+      }
+    },
+    {
+      "raw_id": 8832,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4600,
+        "canonical_key": "4b12560093111c67419b7768311382635a838ea2"
+      }
+    },
+    {
+      "raw_id": 8966,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7074,
+        "canonical_key": "7c4a772e0fc51fd7c7ef90e212158db6b5689aad"
+      }
+    },
+    {
+      "raw_id": 9038,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5908,
+        "canonical_key": "4e88348c8b72168bb4a35ff6d67ccde53da83edd"
+      }
+    },
+    {
+      "raw_id": 9099,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 8484,
+        "canonical_key": "d317b9a8d42750c726423edd84ad272a9ebb04c2"
+      }
+    },
+    {
+      "raw_id": 9170,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4811,
+        "canonical_key": "64d177f290406417d9d33be38f6446e42f099c97"
+      }
+    },
+    {
+      "raw_id": 9183,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7399,
+        "canonical_key": "02722d42b9d77fbffec6f98ca3adb393c0a284c6"
+      }
+    },
+    {
+      "raw_id": 9211,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6203,
+        "canonical_key": "3b71d5542c26b0eedcdf764eed6e3e3e3a407021"
+      }
+    },
+    {
+      "raw_id": 9310,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6991,
+        "canonical_key": "074c672c4998ffb4c95a5dd31d8132012d109893"
+      }
+    },
+    {
+      "raw_id": 9388,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 8635,
+        "canonical_key": "46e2b899fe6d2a434926caea693b3488d355e663"
+      }
+    },
+    {
+      "raw_id": 9402,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 9080,
+        "canonical_key": "b1cdce9140848c3b25bdb20071cbe306e74a8ffb"
+      }
+    },
+    {
+      "raw_id": 9412,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5582,
+        "canonical_key": "93990f5c3200403a740c6a865e22f1e24bfb80d7"
+      }
+    },
+    {
+      "raw_id": 9428,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7178,
+        "canonical_key": "de1bfd1a3e325de60368765ee4cc0dd0e2b23b8f"
+      }
+    },
+    {
+      "raw_id": 9452,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 8377,
+        "canonical_key": "3a4c75da6d5a2a32f797dcf33ba32093fc9a9574"
+      }
+    },
+    {
+      "raw_id": 9461,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5933,
+        "canonical_key": "112b9221ad18e31acf9dc7e60a9b27c082b0bab4"
+      }
+    },
+    {
+      "raw_id": 9507,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5458,
+        "canonical_key": "42eb8eb5c40f305c9b6ec31ce9bf9746bbb97d40"
+      }
+    },
+    {
+      "raw_id": 9523,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6653,
+        "canonical_key": "9ab16302851dd4978c734d9ea9a2f33968fc9084"
+      }
+    },
+    {
+      "raw_id": 9538,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6770,
+        "canonical_key": "86aa7798749d0bdbb8843b445075839df4c4baf9"
+      }
+    },
+    {
+      "raw_id": 9546,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6314,
+        "canonical_key": "6e46a6017743d480045de79d5650efffd303224a"
+      }
+    },
+    {
+      "raw_id": 9571,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5920,
+        "canonical_key": "70ee8898375e730850a893ec2054bb405401c1ce"
+      }
+    },
+    {
+      "raw_id": 9605,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6834,
+        "canonical_key": "d6894a78b931836a14fd88badba9d62355e4d3b4"
+      }
+    },
+    {
+      "raw_id": 9616,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6257,
+        "canonical_key": "dcf470c5e63e916cfe22a0e88dbd898ec55abdbf"
+      }
+    },
+    {
+      "raw_id": 9619,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5063,
+        "canonical_key": "320765ecf3edf4aba0037b63bddc205fa4c5c636"
+      }
+    },
+    {
+      "raw_id": 9643,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7228,
+        "canonical_key": "a2b918831029eead1e8f306facc947c9c35f43a9"
+      }
+    },
+    {
+      "raw_id": 9646,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7290,
+        "canonical_key": "65a8ce9ab69549ea580e8678aae2c2bb92fa1ad4"
+      }
+    },
+    {
+      "raw_id": 9690,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7014,
+        "canonical_key": "7ebb49bd98487dfe7d2692e9df5ce9a7e09e8f86"
+      }
+    },
+    {
+      "raw_id": 9761,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7044,
+        "canonical_key": "05b915b831d81e2e47d19f5d27aef3815e19de64"
+      }
+    },
+    {
+      "raw_id": 9787,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6178,
+        "canonical_key": "06fba4e0a58301dfe3e1bee19156af94eb6382e4"
+      }
+    },
+    {
+      "raw_id": 9793,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 4461,
+        "canonical_key": "41c2558a89a70ab698fbd94b922927b77fa172c5"
+      }
+    },
+    {
+      "raw_id": 9794,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 8539,
+        "canonical_key": "1dd374f22300c0b6c0c55a13d5c3ad3c72ce4620"
+      }
+    },
+    {
+      "raw_id": 9800,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 9771,
+        "canonical_key": "38c9c66fd1f9bf2ccc422c085c2d1237b3036615"
+      }
+    },
+    {
+      "raw_id": 9804,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5617,
+        "canonical_key": "76ab238c2fa5e74abf62debcd7d899119f7bac12"
+      }
+    },
+    {
+      "raw_id": 9858,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7729,
+        "canonical_key": "090daf1d87ca4227f4482d386c83a3f0a6596b88"
+      }
+    },
+    {
+      "raw_id": 9878,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5267,
+        "canonical_key": "b15164ca2e94e4c9aab74f45f169a84e76faed9e"
+      }
+    },
+    {
+      "raw_id": 9881,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 7640,
+        "canonical_key": "5faf2b22dafd465dc36b3001df337d73425d7227"
+      }
+    },
+    {
+      "raw_id": 9913,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 8975,
+        "canonical_key": "da04e4be18f697e32ff23c3aad5f110f146017d8"
+      }
+    },
+    {
+      "raw_id": 9929,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5501,
+        "canonical_key": "7b6dfa9bada6a48b4bce00573df7fd06ec10c67f"
+      }
+    },
+    {
+      "raw_id": 9934,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 5621,
+        "canonical_key": "a266988aaa8746b4d0c88efd40f9f131f61e91a4"
+      }
+    },
+    {
+      "raw_id": 9960,
+      "stage": "deduplicate",
+      "level": "info",
+      "code": "duplicate_record",
+      "message": "Record was identified as duplicate and skipped from the clean table.",
+      "details": {
+        "duplicate_of_raw_id": 6185,
+        "canonical_key": "9c9c82a2baeed4c3c040b5e0b20222c1ca44e4f3"
+      }
+    }
+  ]
+}

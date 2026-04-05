@@ -1,0 +1,81 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: career-planning-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-career_planning}
+      POSTGRES_USER: ${POSTGRES_USER:-career_planning}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-career_planning}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-career_planning} -d ${POSTGRES_DB:-career_planning}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      args:
+        APT_MIRROR: ${APT_MIRROR:-mirrors.aliyun.com}
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://mirrors.aliyun.com/pypi/simple/}
+        http_proxy: ${HTTP_PROXY:-}
+        https_proxy: ${HTTPS_PROXY:-}
+        HTTP_PROXY: ${HTTP_PROXY:-}
+        HTTPS_PROXY: ${HTTPS_PROXY:-}
+    container_name: career-planning-backend
+    restart: unless-stopped
+    environment:
+        APP_NAME: ${APP_NAME:-AI Career Planning Agent}
+        APP_ENV: ${APP_ENV:-development}
+        DEBUG: ${APP_DEBUG:-false}
+        LOG_LEVEL: ${LOG_LEVEL:-INFO}
+        FRONTEND_URL: http://localhost
+        DEMO_AUTO_SEED_JOB_PROFILES: ${DEMO_AUTO_SEED_JOB_PROFILES:-true}
+        DEMO_JOB_SEED_PATH: ${DEMO_JOB_SEED_PATH:-/app/data/seeds/job_postings_sample.csv}
+
+        POSTGRES_SERVER: db
+        POSTGRES_PORT: 5432
+        POSTGRES_DB: ${POSTGRES_DB:-career_planning}
+        POSTGRES_USER: ${POSTGRES_USER:-career_planning}
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-career_planning}
+
+        SKIP_DB_CHECK: ${SKIP_DB_CHECK:-false}
+        JOB_PROFILE_LLM_PROVIDER: ${JOB_PROFILE_LLM_PROVIDER:-heuristic}
+        JOB_PROFILE_LLM_BASE_URL: ${JOB_PROFILE_LLM_BASE_URL:-}
+        JOB_PROFILE_LLM_API_KEY: ${JOB_PROFILE_LLM_API_KEY:-}
+        JOB_PROFILE_LLM_MODEL: ${JOB_PROFILE_LLM_MODEL:-job-profile-extractor}
+        JOB_PROFILE_LLM_TIMEOUT_SECONDS: ${JOB_PROFILE_LLM_TIMEOUT_SECONDS:-30}
+        REPORTING_LLM_PROVIDER: ${REPORTING_LLM_PROVIDER:-}
+        REPORTING_LLM_BASE_URL: ${REPORTING_LLM_BASE_URL:-}
+        REPORTING_LLM_API_KEY: ${REPORTING_LLM_API_KEY:-}
+        REPORTING_LLM_MODEL: ${REPORTING_LLM_MODEL:-}
+        REPORTING_LLM_TIMEOUT_SECONDS: ${REPORTING_LLM_TIMEOUT_SECONDS:-30}
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      db:
+        condition: service_healthy
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: ""
+    container_name: career-planning-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+
+volumes:
+  postgres_data:
