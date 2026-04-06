@@ -1,14 +1,13 @@
 services:
   db:
     image: postgres:17-alpine
-    container_name: career-planning-db
     restart: unless-stopped
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-career_planning}
       POSTGRES_USER: ${POSTGRES_USER:-career_planning}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-career_planning}
     ports:
-      - "${POSTGRES_PORT:-5432}:5432"
+      - "${POSTGRES_PORT:-5433}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -27,14 +26,13 @@ services:
         https_proxy: ${HTTPS_PROXY:-}
         HTTP_PROXY: ${HTTP_PROXY:-}
         HTTPS_PROXY: ${HTTPS_PROXY:-}
-    container_name: career-planning-backend
     restart: unless-stopped
     environment:
         APP_NAME: ${APP_NAME:-AI Career Planning Agent}
         APP_ENV: ${APP_ENV:-development}
         DEBUG: ${APP_DEBUG:-false}
         LOG_LEVEL: ${LOG_LEVEL:-INFO}
-        FRONTEND_URL: http://localhost
+        FRONTEND_URL: ${FRONTEND_URL:-http://localhost:8080}
         DEMO_AUTO_SEED_JOB_PROFILES: ${DEMO_AUTO_SEED_JOB_PROFILES:-true}
         DEMO_JOB_SEED_PATH: ${DEMO_JOB_SEED_PATH:-/app/data/seeds/job_postings_sample.csv}
 
@@ -63,19 +61,18 @@ services:
     expose:
       - "8000"
     ports:
-      - "8000:8000"
+      - "${BACKEND_PORT:-8001}:8000"
 
   frontend:
     build:
       context: ./frontend
       args:
-        VITE_API_BASE_URL: ""
-    container_name: career-planning-frontend
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:8001}
     restart: unless-stopped
     depends_on:
       - backend
     ports:
-      - "80:80"
+      - "${FRONTEND_PORT:-8080}:80"
 
 volumes:
   postgres_data:
