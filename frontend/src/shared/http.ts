@@ -1,6 +1,7 @@
 import { getAuthToken } from "./authStorage";
 
-const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000").replace(/\/+$/, "");
+const configuredApiBaseUrl = import.meta.env.VITE_API_BASE_URL?.trim();
+const apiBaseUrl = (configuredApiBaseUrl || "http://localhost:8000").replace(/\/+$/, "");
 
 async function getErrorMessage(response: Response, fallback: string): Promise<string> {
   try {
