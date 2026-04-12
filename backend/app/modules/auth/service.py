@@ -104,6 +104,48 @@ async def logout_user(session: AsyncSession, *, token: str) -> None:
     await session.commit()
 
 
+async def update_user_profile(
+    session: AsyncSession,
+    *,
+    user: UserAccount,
+    email: str | None = None,
+    display_name: str | None = None,
+    current_password: str | None = None,
+    new_password: str | None = None,
+) -> AuthUser:
+    await ensure_auth_tables(session)
+
+    if email and email.lower() != user.email:
+        existing = await session.execute(select(UserAccount).where(UserAccount.email == email.lower()))
+        if existing.scalar_one_or_none() is not None:
+            raise AppException(message="该邮箱已被使用", error_code="auth_email_exists", status_code=409)
+        user.email = email.lower()
+
+    if display_name is not None:
+        user.display_name = display_name.strip()
+
+    if new_password:
+        if not current_password or user.password_hash != _hash_password(current_password, user.password_salt):
+            raise AppException(message="当前密码不正确", error_code="auth_invalid_current_password", status_code=401)
+        salt = secrets.token_hex(16)
+        user.password_salt = salt
+        user.password_hash = _hash_password(new_password, salt)
+
+    await session.commit()
+    await session.refresh(user)
+    return _build_auth_user(user)
+
+
+async def delete_user_account(session: AsyncSession, *, user: UserAccount) -> None:
+    await ensure_auth_tables(session)
+    await session.execute(delete(UserSessionRecord).where(UserSessionRecord.user_id == user.id))
+    await session.execute(delete(UserStudentProfileLink).where(UserStudentProfileLink.user_id == user.id))
+    await session.execute(delete(UserCareerReportLink).where(UserCareerReportLink.user_id == user.id))
+    await session.execute(delete(UserGeneratedResumeLink).where(UserGeneratedResumeLink.user_id == user.id))
+    await session.execute(delete(UserAccount).where(UserAccount.id == user.id))
+    await session.commit()
+
+
 async def get_current_user(
     credentials: HTTPAuthorizationCredentials | None = Depends(security),
     session: AsyncSession = Depends(get_db_session),
@@ -262,6 +304,9 @@ async def build_workspace_overview(session: AsyncSession, *, user: UserAccount) 
                 profile_version=row.profile_version,
                 summary=row.summary,
                 career_intention=row.career_intention,
+                ability_scores=row.ability_scores or {},
+                completeness_score=row.completeness_score,
+                competitiveness_score=row.competitiveness_score,
                 updated_at=row.updated_at,
             )
             for row in profile_rows

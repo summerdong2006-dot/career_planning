@@ -60,6 +60,25 @@ class AuthLoginRequest(BaseModel):
         return normalized
 
 
+class AuthProfileUpdateRequest(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
+    email: str | None = None
+    display_name: str | None = Field(default=None, min_length=1, max_length=128)
+    current_password: str | None = Field(default=None, min_length=6, max_length=128)
+    new_password: str | None = Field(default=None, min_length=6, max_length=128)
+
+    @field_validator("email")
+    @classmethod
+    def validate_optional_email(cls, value: str | None) -> str | None:
+        if value is None:
+            return value
+        normalized = value.strip().lower()
+        if "@" not in normalized or normalized.startswith("@") or normalized.endswith("@"):
+            raise ValueError("invalid email")
+        return normalized
+
+
 class StudentWorkspaceSummary(BaseModel):
     model_config = ConfigDict(extra="ignore")
 
@@ -68,6 +87,9 @@ class StudentWorkspaceSummary(BaseModel):
     profile_version: int
     summary: str
     career_intention: str
+    ability_scores: dict[str, float] = Field(default_factory=dict)
+    completeness_score: float = 0.0
+    competitiveness_score: float = 0.0
     updated_at: datetime | None = None
 
 

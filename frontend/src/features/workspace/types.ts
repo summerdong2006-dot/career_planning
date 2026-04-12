@@ -6,6 +6,9 @@ export type StudentWorkspaceSummary = {
   profile_version: number;
   summary: string;
   career_intention: string;
+  ability_scores: Record<string, number>;
+  completeness_score: number;
+  competitiveness_score: number;
   updated_at: string | null;
 };
 
