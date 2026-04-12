@@ -61,13 +61,13 @@ services:
     expose:
       - "8000"
     ports:
-      - "${BACKEND_PORT:-8001}:8000"
+      - "${BACKEND_PORT:-8000}:8000"
 
   frontend:
     build:
       context: ./frontend
       args:
-        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:8001}
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:8000}
     restart: unless-stopped
     depends_on:
       - backend
