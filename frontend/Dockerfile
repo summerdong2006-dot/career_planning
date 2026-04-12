@@ -1,6 +1,6 @@
 FROM node:20-alpine AS build
 
-ARG VITE_API_BASE_URL=http://localhost:8000
+ARG VITE_API_BASE_URL=http://localhost:8001
 
 WORKDIR /app
 

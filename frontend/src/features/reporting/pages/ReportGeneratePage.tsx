@@ -111,21 +111,31 @@ export function ReportGeneratePage({ initialStudentProfileId, onNavigateHome, on
   };
 
   return (
-    <main className="app-shell">
-      <section className="hero-card glass-card">
-        <div>
+    <main className="app-shell report-workbench">
+      <section className="hero-card glass-card report-hero">
+        <div className="report-hero__copy">
           <p className="eyebrow">Career Report</p>
-          <h1>职业报告 Demo 工作台</h1>
-          <p className="hero-copy">这一页只保留 Demo 最需要的两件事：生成一份职业报告，以及打开已有报告继续展示。</p>
+          <h1>职业报告工作台</h1>
+          <p className="hero-copy">在这里生成专属职业发展报告，回顾个人画像与目标岗位，并继续查看已有报告。</p>
         </div>
-        <aside className={`status-panel status-panel--${requestState}`}>
-          <span>当前状态</span>
-          <strong>{message}</strong>
-        </aside>
+        <div className="report-hero__side">
+          <aside className={`status-panel status-panel--${requestState}`}>
+            <span>当前状态</span>
+            <strong>{message}</strong>
+          </aside>
+          <div className="report-cover-stack" aria-hidden="true">
+            <span className="report-cover-stack__sheet report-cover-stack__sheet--back" />
+            <span className="report-cover-stack__sheet report-cover-stack__sheet--front">
+              <i />
+              <i />
+              <i />
+            </span>
+          </div>
+        </div>
       </section>
 
-      <section className="two-column-grid">
-        <article className="form-card glass-card">
+      <section className="report-console-grid">
+        <article className="form-card glass-card report-console-card">
           <div className="panel-title">
             <p className="eyebrow">Step 1</p>
             <h2>生成新报告</h2>
@@ -179,7 +189,7 @@ export function ReportGeneratePage({ initialStudentProfileId, onNavigateHome, on
           </div>
         </article>
 
-        <article className="info-card glass-card">
+        <article className="info-card glass-card report-open-card">
           <div className="panel-title">
             <p className="eyebrow">Step 2</p>
             <h2>打开已有报告</h2>
@@ -204,14 +214,17 @@ export function ReportGeneratePage({ initialStudentProfileId, onNavigateHome, on
             </button>
           </div>
 
+          <div className="report-includes">
+            <span>职业定位</span>
+            <span>能力差距</span>
+            <span>行动计划</span>
+            <span>风险提醒</span>
+          </div>
+
           <div className="list-stack">
-            <article className="list-card">
+            <article className="list-card report-tip-card">
               <h4>演示建议</h4>
               <p className="muted-text">先在学生画像页生成一个 `student_profile_id`，再回到这里生成职业报告，路径最稳定。</p>
-            </article>
-            <article className="list-card">
-              <h4>为什么这页重做了</h4>
-              <p className="muted-text">这版故意减少页面噪音和测试口径，只保留 Demo 必须的操作入口。</p>
             </article>
           </div>
         </article>

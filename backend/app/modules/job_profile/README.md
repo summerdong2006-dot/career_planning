@@ -39,7 +39,7 @@ python -m app.modules.job_profile.extract_profiles --batch-id 1 --limit 50
 ### 4. API 方式调用单条抽取
 
 ```bash
-curl -X POST http://localhost:8000/api/v1/job-profiles/extract \
+curl -X POST http://localhost:8001/api/v1/job-profiles/extract \
   -H "Content-Type: application/json" \
   -d '{
     "source_clean_id": 1,

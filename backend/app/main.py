@@ -3,6 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api.routes.assistant import router as assistant_router
 from app.api.routes.auth import router as auth_router
 from app.api.routes.health import router as health_router
 from app.api.routes.job_graph import router as job_graph_router
@@ -62,6 +63,7 @@ def create_app() -> FastAPI:
     )
 
     register_exception_handlers(app)
+    app.include_router(assistant_router)
     app.include_router(auth_router)
     app.include_router(health_router)
     app.include_router(job_profile_router)
@@ -75,4 +77,3 @@ def create_app() -> FastAPI:
 
 
 app = create_app()
-

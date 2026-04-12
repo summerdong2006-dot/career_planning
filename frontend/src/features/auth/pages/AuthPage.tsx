@@ -51,9 +51,9 @@ export function AuthPage({ onAuthenticated }: AuthPageProps) {
       <section className="auth-panel glass-card">
         <div className="auth-copy">
           <p className="eyebrow">AI Career Planning</p>
-          <h1>把当前项目变成一个能实际操作的网站</h1>
+          <h1>登录你的职业规划工作台</h1>
           <p className="hero-copy">
-            当前版本已经串起登录、学生画像、岗位推荐、职业报告和定制简历，适合先做演示、联调和内部试用。
+            登录后可以保存学生画像、岗位推荐、职业报告和定制简历，让每一次职业探索都能连续推进。
           </p>
           <div className={`status-panel status-panel--${requestState}`}>
             <span>当前状态</span>
@@ -81,8 +81,8 @@ export function AuthPage({ onAuthenticated }: AuthPageProps) {
 
           <div className="panel-title">
             <p className="eyebrow">Account</p>
-            <h2>{mode === "login" ? "登录工作台" : "创建试用账号"}</h2>
-            <p className="muted-text">先做最小可用版：邮箱密码登录，不引入复杂角色系统。</p>
+            <h2>{mode === "login" ? "登录工作台" : "创建新账号"}</h2>
+            <p className="muted-text">使用邮箱和密码进入系统，后续生成的画像、报告和简历都会保存在你的账号下。</p>
           </div>
 
           <div className="form-grid form-grid--single">

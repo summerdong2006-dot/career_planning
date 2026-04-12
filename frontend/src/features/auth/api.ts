@@ -1,6 +1,6 @@
 import { requestJson } from "../../shared/http";
 
-import type { AuthSessionResponse, AuthUser } from "./types";
+import type { AuthProfileUpdatePayload, AuthSessionResponse, AuthUser } from "./types";
 
 type AuthPayload = {
   email: string;
@@ -36,5 +36,23 @@ export async function getCurrentUser(): Promise<AuthUser> {
 export async function logoutAccount(): Promise<void> {
   await requestJson<{ ok: boolean }>("/api/v1/auth/logout", {
     method: "POST"
+  });
+}
+
+export async function updateCurrentUser(payload: AuthProfileUpdatePayload): Promise<AuthUser> {
+  return requestJson<AuthUser>("/api/v1/auth/me", {
+    body: JSON.stringify({
+      email: payload.email,
+      display_name: payload.displayName,
+      current_password: payload.currentPassword,
+      new_password: payload.newPassword
+    }),
+    method: "PATCH"
+  });
+}
+
+export async function deleteCurrentUser(): Promise<void> {
+  await requestJson<{ ok: boolean }>("/api/v1/auth/me", {
+    method: "DELETE"
   });
 }

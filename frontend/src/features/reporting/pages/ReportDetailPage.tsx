@@ -1,6 +1,7 @@
 ﻿import { useEffect, useMemo, useState } from "react";
 
 import { toSafeDisplayList, toSafeDisplayText } from "../../../shared/encoding";
+import { renderMarkdownToHtml } from "../../../shared/markdown";
 import { downloadReport, getReportDetail, updateReportSection } from "../api";
 import type {
   CareerReportDetail,
@@ -82,74 +83,6 @@ function safeSectionContent(section: ReportEditorSection): string {
   return toSafeDisplayText(section.content, "该部分内容当前不可直接展示，你可以手动编辑成更适合 Demo 的版本。", {
     allowAscii: true
   });
-}
-
-function escapeHtml(value: string): string {
-  return value
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#39;");
-}
-
-function renderMarkdownToHtml(markdown: string): string {
-  const normalized = markdown.replace(/\r\n/g, "\n").trim();
-  if (!normalized) {
-    return '<p class="preview-empty">当前章节内容为空。</p>';
-  }
-
-  const lines = normalized.split("\n");
-  const htmlParts: string[] = [];
-  let listItems: string[] = [];
-
-  const flushList = () => {
-    if (listItems.length === 0) {
-      return;
-    }
-    htmlParts.push(`<ul>${listItems.join("")}</ul>`);
-    listItems = [];
-  };
-
-  const inline = (value: string) =>
-    escapeHtml(value)
-      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-      .replace(/\*(.+?)\*/g, "<em>$1</em>")
-      .replace(/`([^`]+)`/g, "<code>$1</code>");
-
-  for (const rawLine of lines) {
-    const line = rawLine.trim();
-    if (!line) {
-      flushList();
-      continue;
-    }
-
-    const headingMatch = line.match(/^(#{1,3})\s+(.+)$/);
-    if (headingMatch) {
-      flushList();
-      const level = headingMatch[1].length;
-      htmlParts.push(`<h${level}>${inline(headingMatch[2])}</h${level}>`);
-      continue;
-    }
-
-    const orderedMatch = line.match(/^\d+\.\s+(.+)$/);
-    if (orderedMatch) {
-      listItems.push(`<li>${inline(orderedMatch[1])}</li>`);
-      continue;
-    }
-
-    const bulletMatch = line.match(/^[-*]\s+(.+)$/);
-    if (bulletMatch) {
-      listItems.push(`<li>${inline(bulletMatch[1])}</li>`);
-      continue;
-    }
-
-    flushList();
-    htmlParts.push(`<p>${inline(line)}</p>`);
-  }
-
-  flushList();
-  return htmlParts.join("");
 }
 
 export function ReportDetailPage({ reportId, onNavigateHome, onOpenReport }: ReportDetailPageProps) {
@@ -316,26 +249,36 @@ export function ReportDetailPage({ reportId, onNavigateHome, onOpenReport }: Rep
   }, [report]);
 
   const previewHtml = useMemo(
-    () => renderMarkdownToHtml(currentSection?.content ?? ""),
+    () => renderMarkdownToHtml(currentSection?.content ?? "", '<p class="preview-empty">当前章节内容为空。</p>'),
     [currentSection]
   );
 
   return (
-    <main className="app-shell">
-      <section className="hero-card glass-card">
-        <div>
+    <main className="app-shell report-reader">
+      <section className="hero-card glass-card report-hero report-reader-hero">
+        <div className="report-hero__copy">
           <p className="eyebrow">Report Detail</p>
           <h1>{toSafeDisplayText(report?.report_title, `职业报告 #${reportId}`)}</h1>
-          <p className="hero-copy">这版详情页专门面向 Demo 场景，优先保证内容干净、结构清楚，并支持你手动微调每个章节。</p>
+          <p className="hero-copy">在这里查看完整职业发展建议，梳理优势、差距与下一步行动，并按需要微调报告内容。</p>
         </div>
-        <aside className={`status-panel status-panel--${requestState}`}>
-          <span>当前状态</span>
-          <strong>{message}</strong>
-        </aside>
+        <div className="report-hero__side">
+          <aside className={`status-panel status-panel--${requestState}`}>
+            <span>当前状态</span>
+            <strong>{message}</strong>
+          </aside>
+          <div className="report-cover-stack" aria-hidden="true">
+            <span className="report-cover-stack__sheet report-cover-stack__sheet--back" />
+            <span className="report-cover-stack__sheet report-cover-stack__sheet--front">
+              <i />
+              <i />
+              <i />
+            </span>
+          </div>
+        </div>
       </section>
 
-      <section className="editor-panel glass-card">
-        <div className="toolbar-row">
+      <section className="editor-panel glass-card report-reader-panel">
+        <div className="toolbar-row report-toolbar">
           <div className="toolbar-inline">
             <button className="ghost-button" onClick={onNavigateHome} type="button">
               返回报告工作台
@@ -375,31 +318,31 @@ export function ReportDetailPage({ reportId, onNavigateHome, onOpenReport }: Rep
 
         {report ? (
           <>
-            <div className="meta-grid">
-              <article className="meta-card">
+            <div className="meta-grid report-meta-grid">
+              <article className="meta-card report-meta-card">
                 <span className="eyebrow">Student</span>
                 <strong>{toSafeDisplayText(report.content.meta.student_id, "未填写", { allowAscii: true })}</strong>
               </article>
-              <article className="meta-card">
+              <article className="meta-card report-meta-card">
                 <span className="eyebrow">Target Job</span>
                 <strong>{toSafeDisplayText(report.content.meta.target_job, "待补充")}</strong>
               </article>
-              <article className="meta-card">
+              <article className="meta-card report-meta-card">
                 <span className="eyebrow">Generated</span>
                 <strong>{toSafeDisplayText(report.content.meta.generated_at, formatDate(report.created_at), { allowAscii: true })}</strong>
               </article>
-              <article className="meta-card">
+              <article className="meta-card report-meta-card">
                 <span className="eyebrow">Version</span>
                 <strong>v{report.report_version} / {toSafeDisplayText(report.status, "draft", { allowAscii: true })}</strong>
               </article>
             </div>
 
-            <div className="detail-layout">
-              <aside className="nav-section glass-card">
+            <div className="detail-layout report-detail-layout">
+              <aside className="nav-section glass-card report-section-nav">
                 <div className="panel-title">
                   <p className="eyebrow">Sections</p>
                   <h3>章节导航</h3>
-                  <p className="muted-text">每个章节都可以单独查看和编辑，适合在 Demo 前快速润色内容。</p>
+                  <p className="muted-text">每个章节都可以单独查看和编辑，适合快速润色内容。</p>
                 </div>
 
                 <div className="section-list">
@@ -437,7 +380,7 @@ export function ReportDetailPage({ reportId, onNavigateHome, onOpenReport }: Rep
                   </article>
                 </div>
 
-                <article className="list-card">
+                <article className="list-card report-warning-card">
                   <p className="eyebrow">Warnings</p>
                   <h4>展示提示</h4>
                   <ul className="warning-list">
@@ -448,7 +391,7 @@ export function ReportDetailPage({ reportId, onNavigateHome, onOpenReport }: Rep
                 </article>
               </aside>
 
-              <section className="editor-panel glass-card">
+              <section className="editor-panel glass-card report-paper">
                 {currentSection ? (
                   <>
                     <header className="editor-header">
@@ -484,26 +427,26 @@ export function ReportDetailPage({ reportId, onNavigateHome, onOpenReport }: Rep
                         />
                       </label>
 
-                      <article className="preview-card">
+                      <article className="preview-card report-preview-card">
                         <div className="panel-title">
                           <p className="eyebrow">Preview</p>
                           <h4>Markdown 预览</h4>
                         </div>
                         <div
-                          className="markdown-preview"
+                          className="markdown-preview report-markdown"
                           dangerouslySetInnerHTML={{ __html: previewHtml }}
                         />
                       </article>
                     </div>
 
                     <div className="two-column-grid">
-                      <article className="list-card">
+                      <article className="list-card report-related-card">
                         <p className="eyebrow">Recommendations</p>
                         <h4>推荐岗位</h4>
                         <div className="list-stack">
                           {safeRecommendations.length > 0 ? (
                             safeRecommendations.map((recommendation) => (
-                              <article className="list-card" key={`${recommendation.job_id}-${recommendation.job_title}`}>
+                              <article className="list-card report-related-item" key={`${recommendation.job_id}-${recommendation.job_title}`}>
                                 <div className="badge-row">
                                   <span className="tag">{recommendation.category}</span>
                                   <span className="tag">{recommendation.total_score.toFixed(1)} 分</span>
@@ -518,13 +461,13 @@ export function ReportDetailPage({ reportId, onNavigateHome, onOpenReport }: Rep
                         </div>
                       </article>
 
-                      <article className="list-card">
+                      <article className="list-card report-related-card">
                         <p className="eyebrow">Actions</p>
                         <h4>行动建议</h4>
                         <div className="list-stack">
                           {safeActions.length > 0 ? (
                             safeActions.map((action) => (
-                              <article className="list-card" key={action.action_id}>
+                              <article className="list-card report-related-item" key={action.action_id}>
                                 <div className="badge-row">
                                   <span className="tag">{action.timeline}</span>
                                   <span className="tag">{action.priority}</span>

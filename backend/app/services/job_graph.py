@@ -2,14 +2,15 @@ from __future__ import annotations
 
 from typing import Any
 
-from sqlalchemy import select
+from sqlalchemy import or_, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.exceptions import AppException
-from app.modules.job_profile.models import JobPostingProfile
+from app.modules.job_profile.models import JobPostingClean, JobPostingProfile
 from app.modules.matching.config import TEXT_DEFAULT
 from app.modules.matching.schema import JobMatchProfile
 from app.modules.matching.utils import normalize_text, unique_keep_order
+from app.modules.student_profile.models import StudentProfileRecord
 from app.services.job_family import (
     classify_job_family,
     is_blocked_family_pair,
@@ -336,4 +337,172 @@ async def build_job_graph(session: AsyncSession, job_ids: list[int]) -> dict[str
     return {"nodes": nodes, "edges": edges}
 
 
-__all__ = ["build_job_graph", "find_related_jobs", "generate_career_paths"]
+async def search_job_profiles(session: AsyncSession, *, query: str | None = None, limit: int = 18) -> list[JobPostingProfile]:
+    statement = select(JobPostingProfile).order_by(JobPostingProfile.id)
+    normalized_query = (query or "").strip()
+    if normalized_query:
+        pattern = f"%{normalized_query}%"
+        statement = statement.join(JobPostingClean, JobPostingClean.id == JobPostingProfile.source_clean_id).where(
+            or_(
+                JobPostingProfile.job_title.ilike(pattern),
+                JobPostingProfile.summary.ilike(pattern),
+                JobPostingProfile.job_level.ilike(pattern),
+                JobPostingClean.position_name.ilike(pattern),
+                JobPostingClean.position_name_normalized.ilike(pattern),
+                JobPostingClean.company_full_name.ilike(pattern),
+                JobPostingClean.industry.ilike(pattern),
+                JobPostingClean.work_city.ilike(pattern),
+                JobPostingClean.work_address.ilike(pattern),
+            )
+        )
+        rows = (await session.execute(statement.limit(limit))).scalars().all()
+        return [row for row in rows if row.summary or row.must_have_skills]
+
+    rows = (await session.execute(statement.limit(max(limit * 6, 40)))).scalars().all()
+    selected: list[JobPostingProfile] = []
+    seen_titles: set[str] = set()
+    for row in rows:
+        title_key = _title_key(row.job_title)
+        if not title_key or title_key in seen_titles:
+            continue
+        if not row.summary and not row.must_have_skills:
+            continue
+        seen_titles.add(title_key)
+        selected.append(row)
+        if len(selected) >= limit:
+            break
+    return selected
+
+
+async def get_job_profile_by_clean_id(session: AsyncSession, *, job_id: int) -> JobPostingProfile:
+    row = (
+        await session.execute(
+            select(JobPostingProfile).where(JobPostingProfile.source_clean_id == job_id).limit(1)
+        )
+    ).scalar_one_or_none()
+    if row is None:
+        raise AppException(
+            message=f"Job profile {job_id} does not exist",
+            error_code="job_graph_job_not_found",
+            status_code=404,
+        )
+    return row
+
+
+async def find_job_profile_by_title(session: AsyncSession, *, job_title: str) -> JobPostingProfile:
+    normalized = job_title.strip()
+    if not normalized:
+        raise AppException(
+            message="job_title is required",
+            error_code="job_graph_invalid_job_title",
+            status_code=400,
+        )
+
+    exact = (
+        await session.execute(
+            select(JobPostingProfile).where(JobPostingProfile.job_title.ilike(normalized)).limit(1)
+        )
+    ).scalar_one_or_none()
+    if exact is not None:
+        return exact
+
+    pattern = f"%{normalized}%"
+    partial = (
+        await session.execute(
+            select(JobPostingProfile).where(JobPostingProfile.job_title.ilike(pattern)).order_by(JobPostingProfile.id).limit(1)
+        )
+    ).scalar_one_or_none()
+    if partial is not None:
+        return partial
+
+    raise AppException(
+        message=f'No job profile found for "{job_title}"',
+        error_code="job_graph_job_not_found",
+        status_code=404,
+    )
+
+
+async def resolve_job_profile_from_student_profile(
+    session: AsyncSession,
+    *,
+    student_profile_id: int,
+) -> tuple[StudentProfileRecord, JobPostingProfile]:
+    student = await session.get(StudentProfileRecord, student_profile_id)
+    if student is None:
+        raise AppException(
+            message=f"Student profile {student_profile_id} does not exist",
+            error_code="student_profile_not_found",
+            status_code=404,
+        )
+
+    candidate_texts = [
+        student.career_intention,
+        student.summary,
+        str((student.profile_json or {}).get("career_intention", "")),
+        str((student.profile_json or {}).get("target_job", "")),
+    ]
+    normalized_candidates = [text.strip() for text in candidate_texts if isinstance(text, str) and text.strip()]
+
+    for candidate_text in normalized_candidates:
+        try:
+            return student, await find_job_profile_by_title(session, job_title=candidate_text)
+        except AppException:
+            continue
+
+    jobs = await search_job_profiles(session, query=student.career_intention or student.summary, limit=1)
+    if jobs:
+        return student, jobs[0]
+
+    raise AppException(
+        message="No related job profile found for this student profile",
+        error_code="job_graph_student_job_not_found",
+        status_code=404,
+    )
+
+
+def build_timeline_steps(
+    current_job: JobPostingProfile,
+    paths: list[list[str]],
+    related_titles: list[str],
+) -> list[dict[str, Any]]:
+    titles: list[str] = []
+    for title in [current_job.job_title, *current_job.promotion_path, *related_titles]:
+        normalized = normalize_text(title, default="")
+        if normalized and normalized not in titles:
+            titles.append(normalized)
+        if len(titles) >= 5:
+            break
+
+    labels = [
+        "起步阶段",
+        "进阶阶段",
+        "成长阶段",
+        "突破阶段",
+        "未来方向",
+    ]
+
+    timeline: list[dict[str, Any]] = []
+    for index, title in enumerate(titles):
+        path_examples = [path for path in paths if title in path]
+        timeline.append(
+            {
+                "title": title,
+                "phase": labels[min(index, len(labels) - 1)],
+                "description": current_job.summary if index == 0 else f"向 {title} 发展时，建议持续积累项目证明和岗位相关技能。",
+                "skills": current_job.must_have_skills[:4] if index == 0 else current_job.nice_to_have_skills[:4] or current_job.must_have_skills[:4],
+                "path_examples": path_examples,
+            }
+        )
+    return timeline
+
+
+__all__ = [
+    "build_job_graph",
+    "build_timeline_steps",
+    "find_job_profile_by_title",
+    "find_related_jobs",
+    "generate_career_paths",
+    "get_job_profile_by_clean_id",
+    "resolve_job_profile_from_student_profile",
+    "search_job_profiles",
+]

@@ -114,21 +114,32 @@ export function ResumeGeneratePage({ initialStudentProfileId, onNavigateHome }: 
   };
 
   return (
-    <main className="app-shell">
-      <section className="hero-card glass-card">
-        <div>
+    <main className="app-shell resume-workshop">
+      <section className="hero-card glass-card resume-hero">
+        <div className="resume-hero__copy">
           <p className="eyebrow">Resumes</p>
-          <h1>定制简历工作台</h1>
+          <h1>简历工坊</h1>
           <p className="hero-copy">围绕学生画像和目标岗位生成一份技术简历，并允许直接做轻量编辑和导出。</p>
         </div>
-        <aside className={`status-panel status-panel--${requestState}`}>
-          <span>当前状态</span>
-          <strong>{message}</strong>
-        </aside>
+        <div className="resume-hero__side">
+          <aside className={`status-panel status-panel--${requestState}`}>
+            <span>当前状态</span>
+            <strong>{message}</strong>
+          </aside>
+          <div className="resume-paper-stack" aria-hidden="true">
+            <span className="resume-paper-stack__sheet resume-paper-stack__sheet--back" />
+            <span className="resume-paper-stack__sheet resume-paper-stack__sheet--front">
+              <i />
+              <i />
+              <i />
+              <b />
+            </span>
+          </div>
+        </div>
       </section>
 
-      <section className="two-column-grid">
-        <article className="form-card glass-card">
+      <section className="resume-console-grid">
+        <article className="form-card glass-card resume-console-card">
           <div className="panel-title">
             <p className="eyebrow">Input</p>
             <h2>生成参数</h2>
@@ -155,7 +166,7 @@ export function ResumeGeneratePage({ initialStudentProfileId, onNavigateHome }: 
           </div>
         </article>
 
-        <article className="info-card glass-card">
+        <article className="info-card glass-card resume-summary-card">
           <div className="panel-title">
             <p className="eyebrow">Preview</p>
             <h2>简历摘要</h2>
@@ -163,12 +174,12 @@ export function ResumeGeneratePage({ initialStudentProfileId, onNavigateHome }: 
 
           {resume ? (
             <div className="list-stack">
-              <article className="list-card">
+              <article className="list-card resume-mini-card resume-mini-card--mint">
                 <p className="eyebrow">Identity</p>
                 <h4>{resume.content.basic_info.student_name || resume.student_id}</h4>
                 <p className="muted-text">{resume.target_job}</p>
               </article>
-              <article className="list-card">
+              <article className="list-card resume-mini-card resume-mini-card--gold">
                 <p className="eyebrow">Skills</p>
                 <div className="badge-row">
                   {resume.content.skills.map((skill) => (
@@ -188,12 +199,12 @@ export function ResumeGeneratePage({ initialStudentProfileId, onNavigateHome }: 
         </article>
       </section>
 
-      <section className="detail-layout detail-layout--single">
-        <section className="editor-panel glass-card">
+      <section className="detail-layout detail-layout--single resume-detail-shell">
+        <section className="editor-panel glass-card resume-editor-panel">
           {resume ? (
             <>
               <header className="editor-header">
-                <div className="editor-actions">
+                <div className="editor-actions resume-editor-actions">
                   <div className="panel-title">
                     <p className="eyebrow">Editor</p>
                     <h3>简历内容编辑</h3>
@@ -213,19 +224,19 @@ export function ResumeGeneratePage({ initialStudentProfileId, onNavigateHome }: 
                 </div>
               </header>
 
-              <div className="editor-split">
+              <div className="editor-split resume-editor-split">
                 <div className="list-stack">
                   <label className="field-group">
                     <span className="field-label">简历摘要</span>
-                    <textarea className="text-area" onChange={(event) => setSummaryDraft(event.target.value)} value={summaryDraft} />
+                    <textarea className="text-area resume-textarea" onChange={(event) => setSummaryDraft(event.target.value)} value={summaryDraft} />
                   </label>
                   <label className="field-group">
                     <span className="field-label">技能清单</span>
-                    <textarea className="text-area text-area--compact" onChange={(event) => setSkillsDraft(event.target.value)} value={skillsDraft} />
+                    <textarea className="text-area text-area--compact resume-textarea" onChange={(event) => setSkillsDraft(event.target.value)} value={skillsDraft} />
                   </label>
                 </div>
 
-                <article className="preview-card">
+                <article className="preview-card resume-preview-paper">
                   <div className="panel-title">
                     <p className="eyebrow">Preview</p>
                     <h4>阅读预览</h4>
@@ -246,11 +257,11 @@ export function ResumeGeneratePage({ initialStudentProfileId, onNavigateHome }: 
               </div>
 
               <div className="result-grid result-grid--bottom">
-                <article className="list-card">
+                <article className="list-card resume-section-card">
                   <p className="eyebrow">Projects</p>
                   <div className="list-stack">
                     {resume.content.projects.map((project, index) => (
-                      <article className="list-card" key={`${project.name}-${index}`}>
+                      <article className="list-card resume-entry-card" key={`${project.name}-${index}`}>
                         <h4>{project.name || `项目经历 ${index + 1}`}</h4>
                         <p className="muted-text">{project.role}</p>
                         <ul className="bullet-list">
@@ -264,11 +275,11 @@ export function ResumeGeneratePage({ initialStudentProfileId, onNavigateHome }: 
                   </div>
                 </article>
 
-                <article className="list-card">
+                <article className="list-card resume-section-card">
                   <p className="eyebrow">Internships & Extras</p>
                   <div className="list-stack">
                     {resume.content.internships.map((internship, index) => (
-                      <article className="list-card" key={`${internship.company}-${index}`}>
+                      <article className="list-card resume-entry-card" key={`${internship.company}-${index}`}>
                         <h4>{internship.company || `实习经历 ${index + 1}`}</h4>
                         <p className="muted-text">{internship.role}</p>
                         <ul className="bullet-list">
@@ -278,7 +289,7 @@ export function ResumeGeneratePage({ initialStudentProfileId, onNavigateHome }: 
                         </ul>
                       </article>
                     ))}
-                    <article className="list-card">
+                    <article className="list-card resume-entry-card">
                       <h4>补充信息</h4>
                       <ul className="bullet-list">
                         {resume.content.extras.map((extra) => (

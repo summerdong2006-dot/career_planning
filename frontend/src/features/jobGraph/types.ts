@@ -17,6 +17,13 @@ export type RepresentativeJobCard = {
   job_profile_id: number;
   job_title: string;
   job_level: string;
+  work_city: string;
+  work_address: string;
+  salary_range: string;
+  company_name: string;
+  industry: string;
+  company_size: string;
+  company_type: string;
   summary: string;
   must_have_skills: string[];
   certificates: string[];
@@ -26,6 +33,29 @@ export type RepresentativeJobCard = {
 
 export type JobGraphOverviewResponse = {
   representative_jobs: RepresentativeJobCard[];
+  graph: {
+    nodes: JobGraphNode[];
+    edges: JobGraphEdge[];
+  };
+};
+
+export type JobGalleryListResponse = {
+  jobs: RepresentativeJobCard[];
+};
+
+export type JobTimelineStep = {
+  title: string;
+  phase: string;
+  description: string;
+  skills: string[];
+  path_examples: string[][];
+};
+
+export type JobPathExplorerResponse = {
+  source_mode: string;
+  source_label: string;
+  selected_job: RepresentativeJobCard;
+  timeline_steps: JobTimelineStep[];
   graph: {
     nodes: JobGraphNode[];
     edges: JobGraphEdge[];

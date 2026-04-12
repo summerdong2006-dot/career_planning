@@ -9,3 +9,10 @@ export type AuthSessionResponse = {
   token: string;
   user: AuthUser;
 };
+
+export type AuthProfileUpdatePayload = {
+  email?: string;
+  displayName?: string;
+  currentPassword?: string;
+  newPassword?: string;
+};

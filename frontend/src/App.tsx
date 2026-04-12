@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { type ChangeEvent, useEffect, useRef, useState } from "react";
 
-import { getCurrentUser, loginAccount, logoutAccount, registerAccount } from "./features/auth/api";
+import { AssistantWidget } from "./features/assistant/components/AssistantWidget";
+import { deleteCurrentUser, getCurrentUser, logoutAccount, updateCurrentUser } from "./features/auth/api";
 import type { AuthSessionResponse, AuthUser } from "./features/auth/types";
+import { AuthPage } from "./features/auth/pages/AuthPage";
 import { JobGraphPage } from "./features/jobGraph/pages/JobGraphPage";
 import { RecommendationPage } from "./features/matching/pages/RecommendationPage";
 import { ReportDetailPage } from "./features/reporting/pages/ReportDetailPage";
@@ -10,6 +12,7 @@ import { ResumeGeneratePage } from "./features/resumes/pages/ResumeGeneratePage"
 import { StudentProfileGeneratePage } from "./features/studentProfile/pages/StudentProfileGeneratePage";
 import { WorkspaceDashboardPage } from "./features/workspace/pages/WorkspaceDashboardPage";
 import { clearAuthToken, getAuthToken, setAuthToken } from "./shared/authStorage";
+import { clearStoredAvatar, getStoredAvatar, setStoredAvatar } from "./shared/avatarStorage";
 import {
   buildDashboardPath,
   buildJobGraphPath,
@@ -23,34 +26,197 @@ import {
 
 import "./styles.css";
 
-const DEMO_ACCOUNT = {
-  displayName: "Demo User",
-  email: "demo@example.com",
-  password: "123456"
+type ProfileCenterProps = {
+  avatarUrl: string | null;
+  isOpen: boolean;
+  onAvatarChange: (dataUrl: string | null) => void;
+  onClose: () => void;
+  onDeleteAccount: () => Promise<void>;
+  onLogout: () => Promise<void>;
+  onUserUpdated: (user: AuthUser) => void;
+  user: AuthUser;
 };
 
-async function ensureDemoSession(): Promise<AuthSessionResponse> {
-  try {
-    return await loginAccount({
-      email: DEMO_ACCOUNT.email,
-      password: DEMO_ACCOUNT.password
-    });
-  } catch {
-    try {
-      return await registerAccount(DEMO_ACCOUNT);
-    } catch {
-      return loginAccount({
-        email: DEMO_ACCOUNT.email,
-        password: DEMO_ACCOUNT.password
-      });
+function ProfileCenter({
+  avatarUrl,
+  isOpen,
+  onAvatarChange,
+  onClose,
+  onDeleteAccount,
+  onLogout,
+  onUserUpdated,
+  user
+}: ProfileCenterProps) {
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const [displayName, setDisplayName] = useState(user.display_name);
+  const [email, setEmail] = useState(user.email);
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [message, setMessage] = useState("可以修改头像、昵称、邮箱和密码。");
+  const [requestState, setRequestState] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  useEffect(() => {
+    if (!isOpen) {
+      return;
     }
+    setDisplayName(user.display_name);
+    setEmail(user.email);
+    setCurrentPassword("");
+    setNewPassword("");
+    setMessage("可以修改头像、昵称、邮箱和密码。");
+    setRequestState("idle");
+  }, [isOpen, user.display_name, user.email]);
+
+  if (!isOpen) {
+    return null;
   }
+
+  const initials = user.display_name.trim().slice(0, 1).toUpperCase() || "U";
+
+  const handleAvatarUpload = (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    if (!file) {
+      return;
+    }
+    if (!file.type.startsWith("image/")) {
+      setRequestState("error");
+      setMessage("请选择图片文件作为头像。");
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      const result = typeof reader.result === "string" ? reader.result : null;
+      if (result) {
+        onAvatarChange(result);
+        setRequestState("success");
+        setMessage("头像已更新。");
+      }
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleSave = async () => {
+    if (!displayName.trim() || !email.trim()) {
+      setRequestState("error");
+      setMessage("昵称和邮箱不能为空。");
+      return;
+    }
+    if (newPassword && !currentPassword) {
+      setRequestState("error");
+      setMessage("修改密码前请输入当前密码。");
+      return;
+    }
+
+    setRequestState("loading");
+    setMessage("正在保存个人资料。");
+    try {
+      const updated = await updateCurrentUser({
+        currentPassword: currentPassword || undefined,
+        displayName: displayName.trim(),
+        email: email.trim(),
+        newPassword: newPassword || undefined
+      });
+      onUserUpdated(updated);
+      setCurrentPassword("");
+      setNewPassword("");
+      setRequestState("success");
+      setMessage("个人资料已保存。");
+    } catch (error) {
+      setRequestState("error");
+      setMessage(error instanceof Error ? error.message : "保存失败。");
+    }
+  };
+
+  return (
+    <div className="profile-center-backdrop" role="presentation">
+      <section className="profile-center-panel" aria-label="个人中心">
+        <header className="profile-center-panel__header">
+          <div>
+            <p className="studio-eyebrow">Profile Center</p>
+            <h2>个人中心</h2>
+          </div>
+          <button className="profile-center-close" onClick={onClose} type="button">
+            ×
+          </button>
+        </header>
+
+        <div className="profile-center-avatar-row">
+          <button className="profile-center-avatar" onClick={() => fileInputRef.current?.click()} type="button">
+            {avatarUrl ? <img alt="用户头像" src={avatarUrl} /> : <span>{initials}</span>}
+          </button>
+          <div>
+            <strong>{user.display_name}</strong>
+            <p>{user.email}</p>
+            <div className="profile-center-actions-inline">
+              <button className="studio-link" onClick={() => fileInputRef.current?.click()} type="button">
+                上传头像
+              </button>
+              {avatarUrl ? (
+                <button className="studio-link" onClick={() => onAvatarChange(null)} type="button">
+                  移除头像
+                </button>
+              ) : null}
+            </div>
+          </div>
+          <input accept="image/*" hidden onChange={handleAvatarUpload} ref={fileInputRef} type="file" />
+        </div>
+
+        <div className={`profile-center-message profile-center-message--${requestState}`}>{message}</div>
+
+        <div className="profile-center-form">
+          <label className="field-group">
+            <span className="field-label">昵称</span>
+            <input className="text-input" onChange={(event) => setDisplayName(event.target.value)} value={displayName} />
+          </label>
+          <label className="field-group">
+            <span className="field-label">邮箱</span>
+            <input className="text-input" onChange={(event) => setEmail(event.target.value)} type="email" value={email} />
+          </label>
+          <label className="field-group">
+            <span className="field-label">当前密码</span>
+            <input
+              className="text-input"
+              onChange={(event) => setCurrentPassword(event.target.value)}
+              placeholder="修改密码时填写"
+              type="password"
+              value={currentPassword}
+            />
+          </label>
+          <label className="field-group">
+            <span className="field-label">新密码</span>
+            <input
+              className="text-input"
+              onChange={(event) => setNewPassword(event.target.value)}
+              placeholder="不修改可留空"
+              type="password"
+              value={newPassword}
+            />
+          </label>
+        </div>
+
+        <footer className="profile-center-footer">
+          <button className="studio-button studio-button--primary" disabled={requestState === "loading"} onClick={() => void handleSave()} type="button">
+            保存修改
+          </button>
+          <button className="studio-button" onClick={() => void onLogout()} type="button">
+            退出登录
+          </button>
+          <button className="profile-center-danger" onClick={() => void onDeleteAccount()} type="button">
+            注销账号
+          </button>
+        </footer>
+      </section>
+    </div>
+  );
 }
 
 function App() {
   const { route, navigate } = useAppRouter();
   const [currentUser, setCurrentUser] = useState<AuthUser | null>(null);
   const [sessionState, setSessionState] = useState<"loading" | "ready">("loading");
+  const [isProfileCenterOpen, setIsProfileCenterOpen] = useState(false);
+  const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
 
   useEffect(() => {
     const bootstrapSession = async () => {
@@ -59,13 +225,12 @@ function App() {
         if (token) {
           const user = await getCurrentUser();
           setCurrentUser(user);
+          setAvatarUrl(getStoredAvatar(user.id));
           setSessionState("ready");
           return;
         }
 
-        const session = await ensureDemoSession();
-        setAuthToken(session.token);
-        setCurrentUser(session.user);
+        setCurrentUser(null);
         setSessionState("ready");
       } catch {
         clearAuthToken();
@@ -85,13 +250,49 @@ function App() {
     }
 
     clearAuthToken();
+    if (currentUser) {
+      setAvatarUrl(null);
+    }
     setCurrentUser(null);
-    setSessionState("loading");
+    setSessionState("ready");
+    setIsProfileCenterOpen(false);
+    navigate(buildDashboardPath());
+  };
 
-    const session = await ensureDemoSession();
+  const handleAuthenticated = (session: AuthSessionResponse) => {
     setAuthToken(session.token);
     setCurrentUser(session.user);
+    setAvatarUrl(getStoredAvatar(session.user.id));
     setSessionState("ready");
+    navigate(buildDashboardPath());
+  };
+
+  const handleAvatarChange = (dataUrl: string | null) => {
+    if (!currentUser) {
+      return;
+    }
+    if (dataUrl) {
+      setStoredAvatar(currentUser.id, dataUrl);
+    } else {
+      clearStoredAvatar(currentUser.id);
+    }
+    setAvatarUrl(dataUrl);
+  };
+
+  const handleDeleteAccount = async () => {
+    if (!currentUser) {
+      return;
+    }
+    const confirmed = window.confirm("确定要注销当前账号吗？此操作会移除账号登录信息，且不可撤销。");
+    if (!confirmed) {
+      return;
+    }
+    await deleteCurrentUser();
+    clearStoredAvatar(currentUser.id);
+    clearAuthToken();
+    setAvatarUrl(null);
+    setCurrentUser(null);
+    setIsProfileCenterOpen(false);
     navigate(buildDashboardPath());
   };
 
@@ -114,28 +315,14 @@ function App() {
   }
 
   if (!currentUser) {
-    return (
-      <main className="app-shell">
-        <section className="hero-card glass-card">
-          <div>
-            <p className="eyebrow">Demo Mode</p>
-            <h1>演示账号初始化失败</h1>
-            <p className="hero-copy">请刷新页面重试，或检查后端鉴权接口和数据库是否正常。</p>
-          </div>
-          <aside className="status-panel status-panel--error">
-            <span>当前状态</span>
-            <strong>未能自动建立 Demo 会话。</strong>
-          </aside>
-        </section>
-      </main>
-    );
+    return <AuthPage onAuthenticated={handleAuthenticated} />;
   }
 
   const navItems = [
     { label: "工作台", path: buildDashboardPath(), active: route.name === "dashboard" },
     { label: "学生画像", path: buildStudentProfilePath(), active: route.name === "student-profile" },
     { label: "岗位推荐", path: buildJobRecommendationPath(), active: route.name === "job-recommendation" },
-    { label: "岗位图谱", path: buildJobGraphPath(), active: route.name === "job-graph" },
+    { label: "岗位展览", path: buildJobGraphPath(), active: route.name === "job-graph" },
     { label: "职业报告", path: buildReportGeneratePath(), active: route.name === "report-generate" || route.name === "report-detail" },
     { label: "定制简历", path: buildResumeGeneratePath(), active: route.name === "resume-generate" }
   ];
@@ -199,7 +386,7 @@ function App() {
   }
 
   return (
-    <div className="site-shell">
+    <div className={route.name === "dashboard" ? "site-shell site-shell--dashboard" : "site-shell"}>
       <header className="site-header">
         <div className="site-header__brand">
           <p className="eyebrow">Career Planning</p>
@@ -218,13 +405,27 @@ function App() {
           ))}
         </nav>
         <div className="site-header__user">
-          <span>{currentUser.display_name}</span>
-          <button className="secondary-button" onClick={() => void handleLogout()} type="button">
-            重置演示会话
+          <button className="profile-center-trigger" onClick={() => setIsProfileCenterOpen(true)} type="button">
+            <span className="profile-center-trigger__avatar">
+              {avatarUrl ? <img alt="用户头像" src={avatarUrl} /> : currentUser.display_name.slice(0, 1).toUpperCase()}
+            </span>
+            <span>{currentUser.display_name}</span>
+            <strong>个人中心</strong>
           </button>
         </div>
       </header>
       {content}
+      <ProfileCenter
+        avatarUrl={avatarUrl}
+        isOpen={isProfileCenterOpen}
+        onAvatarChange={handleAvatarChange}
+        onClose={() => setIsProfileCenterOpen(false)}
+        onDeleteAccount={handleDeleteAccount}
+        onLogout={handleLogout}
+        onUserUpdated={setCurrentUser}
+        user={currentUser}
+      />
+      <AssistantWidget currentUser={currentUser} route={route} />
     </div>
   );
 }

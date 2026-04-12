@@ -2,13 +2,15 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.session import get_db_session
-from app.modules.auth.schema import AuthLoginRequest, AuthRegisterRequest, AuthSessionResponse, AuthUser
+from app.modules.auth.schema import AuthLoginRequest, AuthProfileUpdateRequest, AuthRegisterRequest, AuthSessionResponse, AuthUser
 from app.modules.auth.service import (
+    delete_user_account,
     get_current_user,
     get_current_user_token,
     login_user,
     logout_user,
     register_user,
+    update_user_profile,
 )
 
 router = APIRouter(prefix="/api/v1/auth", tags=["auth"])
@@ -43,6 +45,31 @@ async def me_route(current_user=Depends(get_current_user)) -> AuthUser:
         display_name=current_user.display_name,
         created_at=current_user.created_at,
     )
+
+
+@router.patch("/me", response_model=AuthUser, summary="Update current user profile")
+async def update_me_route(
+    request: AuthProfileUpdateRequest,
+    current_user=Depends(get_current_user),
+    session: AsyncSession = Depends(get_db_session),
+) -> AuthUser:
+    return await update_user_profile(
+        session=session,
+        user=current_user,
+        email=request.email,
+        display_name=request.display_name,
+        current_password=request.current_password,
+        new_password=request.new_password,
+    )
+
+
+@router.delete("/me", summary="Delete current user account")
+async def delete_me_route(
+    current_user=Depends(get_current_user),
+    session: AsyncSession = Depends(get_db_session),
+) -> dict[str, bool]:
+    await delete_user_account(session=session, user=current_user)
+    return {"ok": True}
 
 
 @router.post("/logout", summary="Logout current session")
