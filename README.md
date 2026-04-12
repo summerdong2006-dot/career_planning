@@ -45,9 +45,9 @@ docker compose up --build
 
 3. Open the app
 
-- Frontend: `http://localhost`
-- Backend docs: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
+- Frontend: `http://localhost:3000`
+- Backend docs: `http://localhost:8001/docs`
+- ReDoc: `http://localhost:8001/redoc`
 
 ## Suggested Manual Test Flow
 
