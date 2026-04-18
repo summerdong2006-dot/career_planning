@@ -205,6 +205,32 @@ async def test_build_student_profile_missing_fields_returns_suggestions(student_
 
 
 @pytest.mark.asyncio
+async def test_negative_internship_section_does_not_create_internship(student_session):
+    source = StudentProfileSource(
+        student_id="stu-no-internship",
+        resume_text=(
+            "姓名：张伟\n"
+            "学校：安徽某职业技术学院\n"
+            "专业：计算机应用技术\n"
+            "学历：大专\n"
+            "求职意向：软件测试实习生 / 技术支持实习生\n"
+            "项目经历：\n"
+            "项目一：校园课程信息展示页面\n"
+            "项目描述：根据课程表内容制作一个简单的网页。\n"
+            "实习经历：\n"
+            "暂无正式实习经历。\n"
+        ),
+        manual_form={},
+        supplement_text="",
+        basic_info={},
+    )
+
+    result = await build_student_profile(student_session, source=source, persist=False)
+
+    assert result.profile.internships == []
+
+
+@pytest.mark.asyncio
 async def test_long_and_repeated_text_keeps_stable_types(student_session):
     repeated = (
         "学校: 华东师范大学。专业: 软件工程。本科。大三。"
@@ -273,6 +299,32 @@ async def test_realistic_resume_text_extracts_project_and_internship_sections(st
     assert internship.company == "星云软件科技有限公司"
     assert internship.role == "后端开发实习生"
     assert "SQL" in internship.description
+
+
+@pytest.mark.asyncio
+async def test_project_result_line_stays_in_current_project_description(student_session):
+    source = StudentProfileSource(
+        student_id="stu-project-result",
+        resume_text=(
+            "姓名：李明\n"
+            "学校：上海工程技术大学\n"
+            "专业：计算机科学与技术\n"
+            "学历：本科\n"
+            "项目经历：\n"
+            "项目一：校园二手交易平台\n"
+            "项目描述：面向校内学生的二手商品交易平台。\n"
+            "项目成果：通过 Redis 缓存将热门商品接口平均响应时间从约 300ms 降低到约 120ms。\n"
+        ),
+        manual_form={},
+        supplement_text="",
+        basic_info={},
+    )
+
+    result = await build_student_profile(student_session, source=source, persist=False)
+
+    assert len(result.profile.projects) == 1
+    assert result.profile.projects[0].name == "校园二手交易平台"
+    assert "Redis 缓存" in result.profile.projects[0].description
 
 
 @pytest.mark.asyncio

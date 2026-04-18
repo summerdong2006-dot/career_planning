@@ -90,6 +90,10 @@ CERTIFICATE_PATTERNS = [
 
 COMPETITION_MARKERS = ["竞赛", "比赛", "挑战杯", "互联网+", "数学建模", "创新创业", "获奖", "奖学金"]
 INTERN_MARKERS = ["实习", "intern", "公司", "客户", "业务支持", "交付"]
+NEGATIVE_INTERNSHIP_PATTERNS = [
+    r"^(暂无|无|没有|未有|尚无|无正式|暂无正式|没有正式).{0,12}(实习|实践|工作|兼职)(经历|经验)?$",
+    r"^(实习|实践|工作|兼职)(经历|经验)?[:：]?(暂无|无|没有|未有|尚无)$",
+]
 PROJECT_MARKERS = ["项目", "课题", "系统设计", "平台开发", "研究", "作品"]
 STUDENT_WORK_MARKERS = ["学生会", "社团", "班长", "部长", "志愿者", "组织", "宣传", "辅导员助理"]
 CAREER_MARKERS = ["求职意向", "职业意向", "意向岗位", "目标岗位", "希望从事", "应聘"]
@@ -450,6 +454,13 @@ def _compact_entry_text(lines: list[str]) -> str:
     return clean_text("；".join(line for line in lines if clean_text(line)))
 
 
+def _is_negative_internship_text(value: Any) -> bool:
+    text = clean_text(value).strip("。.;；,， ")
+    if not text:
+        return False
+    return any(re.search(pattern, text, flags=re.IGNORECASE) for pattern in NEGATIVE_INTERNSHIP_PATTERNS)
+
+
 def _parse_project_entries(preprocessed: Mapping[str, Any]) -> list[dict[str, Any]]:
     section_lines = _extract_section_lines(preprocessed, PROJECT_SECTION_HEADERS)
     if not section_lines:
@@ -495,7 +506,7 @@ def _parse_project_entries(preprocessed: Mapping[str, Any]) -> list[dict[str, An
             continue
 
         generic_project_name = _extract_labeled_value(line, ["项目"])
-        if generic_project_name and not any(line.startswith(prefix) for prefix in ["项目描述", "项目内容", "项目简介"]):
+        if generic_project_name and not any(line.startswith(prefix) for prefix in ["项目描述", "项目内容", "项目简介", "项目成果"]):
             flush()
             current = {"name": generic_project_name, "role": TEXT_DEFAULT, "description": ""}
             continue
@@ -509,7 +520,7 @@ def _parse_project_entries(preprocessed: Mapping[str, Any]) -> list[dict[str, An
             current["role"] = role_value
             continue
 
-        detail_value = _extract_labeled_value(line, ["项目描述", "项目内容", "项目简介", "个人职责", "负责内容"])
+        detail_value = _extract_labeled_value(line, ["项目描述", "项目内容", "项目简介", "项目成果", "个人职责", "负责内容"])
         if detail_value:
             detail_lines.append(detail_value)
             continue
@@ -536,6 +547,15 @@ def _parse_internship_entries(preprocessed: Mapping[str, Any]) -> list[dict[str,
             return
         if detail_lines:
             current["description"] = _compact_entry_text(detail_lines)
+        combined_text = " ".join(
+            clean_text(current.get(field_name))
+            for field_name in ("company", "role", "description")
+            if clean_text(current.get(field_name)) != TEXT_DEFAULT
+        )
+        if _is_negative_internship_text(combined_text):
+            current = None
+            detail_lines = []
+            return
         if clean_text(current.get("company")) or clean_text(current.get("role")) or clean_text(current.get("description")):
             current["company"] = clean_text(current.get("company")) or TEXT_DEFAULT
             current["role"] = clean_text(current.get("role")) or TEXT_DEFAULT
@@ -545,6 +565,9 @@ def _parse_internship_entries(preprocessed: Mapping[str, Any]) -> list[dict[str,
         detail_lines = []
 
     for line in section_lines:
+        if _is_negative_internship_text(line):
+            continue
+
         company_value = _extract_labeled_value(line, ["公司", "实习公司", "实习单位", "单位", "企业"])
         if company_value:
             flush()
@@ -712,6 +735,9 @@ def build_raw_profile_payload(preprocessed: Mapping[str, Any], manual_form: Mapp
     internship_items: list[Any] = []
     for field_name in ["internships", "internship_experiences"]:
         internship_items.extend(_flatten_collection_items(manual_form.get(field_name)))
+    internship_items = [
+        item for item in internship_items if not isinstance(item, str) or not _is_negative_internship_text(item)
+    ]
     internships = [*internship_items, *_parse_internship_entries(preprocessed)]
     internship_evidence = _keyword_matches(segments, INTERN_MARKERS)
 
