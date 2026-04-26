@@ -151,8 +151,6 @@ def _apply_job_family_weighting(
 
     return adjusted
 
-
-
 def recommend_jobs_from_profiles(
     student_profile: StudentMatchProfile,
     job_profiles: list[JobMatchProfile],
@@ -164,8 +162,36 @@ def recommend_jobs_from_profiles(
 
     raw_matches = [match_student_to_job(student_profile, job, weights=weights) for job in job_profiles]
     weighted_matches = _apply_job_family_weighting(student_profile, raw_matches)
+
+   
     weighted_matches.sort(key=_score_sort_key)
-    return weighted_matches[:top_k]
+
+  
+    selected = []
+    seen_titles = set()
+
+    for m in weighted_matches:
+        title = (m.job_title or "").strip()
+
+        # 同岗位只保留一个
+        if title in seen_titles:
+            continue
+
+        selected.append(m)
+        seen_titles.add(title)
+
+        if len(selected) >= top_k:
+            break
+
+   
+    if len(selected) < top_k:
+        for m in weighted_matches:
+            if m not in selected:
+                selected.append(m)
+                if len(selected) >= top_k:
+                    break
+
+    return selected
 
 
 async def _get_student_profile_or_raise(session: AsyncSession, student_profile_id: int) -> StudentProfileRecord:

@@ -12,4 +12,4 @@ openpyxl==3.1.5
 xlrd==2.0.1
 weasyprint==62.3
 pydyf==0.10.0
-
+qdrant-client==1.17.1
