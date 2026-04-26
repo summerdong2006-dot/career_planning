@@ -60,7 +60,10 @@ class Settings(BaseSettings):
     @computed_field  # type: ignore[misc]
     @property
     def cors_origins(self) -> list[str]:
-        return [self.frontend_url]
+        return [
+            "http://localhost:5173",
+            "http://47.120.67.3:5173",
+        ]
 
 
 @lru_cache

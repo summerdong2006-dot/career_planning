@@ -28,7 +28,6 @@ HEX_32_PATTERN = re.compile(r"^[0-9a-fA-F]{32,}$")
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Build local Qdrant vector DB from jobs_computer_with_text_v2.json and export embeddings JSON."
-   
     )
     parser.add_argument("--input", default=str(DEFAULT_INPUT_PATH), help="Input JSON path")
     parser.add_argument("--qdrant-path", default=str(DEFAULT_QDRANT_PATH), help="Local Qdrant storage directory")

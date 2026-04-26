@@ -19,12 +19,14 @@ data/raw/
 
 .DS_Store
 Thumbs.db
-.env
+
+# logs
+*.log
+
+# local paths
+backend/output/
 data/vector/
-data/processed/*.json
-data/interim/*.json
+
+# temp
 __pycache__/
 *.pyc
-node_modules/
-dist/
-uvicorn.log
