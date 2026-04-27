@@ -30,3 +30,6 @@ data/vector/
 # temp
 __pycache__/
 *.pyc
+
+backend/E:*
+backend/uvicorn.log
