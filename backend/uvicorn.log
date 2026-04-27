@@ -1,0 +1,15 @@
+nohup: ignoring input
+INFO:     Started server process [60199]
+INFO:     Waiting for application startup.
+2026-04-27 23:32:14,534 | INFO | app.main | Starting AI Career Planning Agent in development mode
+2026-04-27 23:32:14,669 | INFO | app.modules.job_profile.demo_seed | Skip demo job seeding because job profiles already exist
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     112.111.55.40:0 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     112.111.55.40:0 - "GET /api/v1/portal/workspace HTTP/1.1" 200 OK
+2026-04-27 23:34:57,599 | INFO | httpx | HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:     112.111.55.40:0 - "POST /api/v1/assistant/chat HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Unsupported upgrade request.
+INFO:     47.92.224.179:52766 - "GET / HTTP/1.1" 404 Not Found
+INFO:     172.236.228.111:9768 - "GET / HTTP/1.1" 404 Not Found
