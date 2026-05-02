@@ -146,3 +146,5 @@ def build_job_profile_llm_client() -> JobProfileLLMClient:
             timeout_seconds=settings.job_profile_llm_timeout_seconds,
         )
     return HeuristicJobProfileLLMClient()
+
+# AI辅助生成：Qwen3-Max-Thinking, 2026-04-27

@@ -546,3 +546,4 @@ def clean_job_record(record: RawJobRecord) -> tuple[CleanJobRecord, list[Cleanin
     )
     return cleaned, issues
 
+# AI辅助生成：Qwen3-Max-Thinking, 2026-04-27

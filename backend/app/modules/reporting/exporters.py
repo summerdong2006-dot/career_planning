@@ -449,3 +449,4 @@ def build_inline_html(content: str, title: str) -> str:
 
 
 
+# AI辅助生成：Qwen3-Max-Thinking, 2026-04-27

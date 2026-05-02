@@ -148,3 +148,4 @@ def build_reporting_llm_client() -> ReportingLLMClient:
             timeout_seconds=timeout_seconds,
         )
     return HeuristicReportingLLMClient()
+# AI辅助生成：Qwen3-Max-Thinking, 2026-04-27
